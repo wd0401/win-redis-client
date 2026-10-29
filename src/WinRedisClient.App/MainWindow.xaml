@@ -1,0 +1,628 @@
+<Window x:Class="WinRedisClient.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:WinRedisClient.App.Localization"
+        xmlns:vm="clr-namespace:WinRedisClient.Presentation.ViewModels;assembly=WinRedisClient.Presentation"
+        Title="WinRedis"
+        Icon="pack://application:,,,/Assets/winredis-icon.png"
+        Width="1340" Height="850" MinWidth="1080" MinHeight="700"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" ResizeMode="CanResize"
+        Background="{DynamicResource BgAppBrush}"
+        Foreground="{DynamicResource TextPrimaryBrush}"
+        FontFamily="{StaticResource UiFont}" FontSize="{DynamicResource Fs13}"
+        UseLayoutRounding="True"
+        PreviewKeyDown="OnPreviewKeyDown"
+        Closing="OnWindowClosing">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="46" ResizeBorderThickness="6" GlassFrameThickness="0"
+                      CornerRadius="0" UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
+
+    <Grid x:Name="RootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="28" />
+        </Grid.RowDefinitions>
+
+        <!-- ═══════════════ 标题栏 ═══════════════ -->
+        <Border Grid.Row="0" Background="{DynamicResource BgSidebarBrush}"
+                BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,0,0,1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="16,0,0,0" VerticalAlignment="Center">
+                    <Image Source="pack://application:,,,/Assets/winredis-icon-128.png"
+                           Width="30" Height="30" VerticalAlignment="Center"
+                           RenderOptions.BitmapScalingMode="HighQuality"
+                           AutomationProperties.Name="WinRedis" />
+                    <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
+                        <TextBlock FontSize="{DynamicResource Fs15}" FontWeight="Bold" Foreground="{DynamicResource TextPrimaryBrush}">
+                            <Run Text="Win" /><Run Text="Redis" Foreground="{DynamicResource PrimaryBrush}" />
+                        </TextBlock>
+                        <TextBlock Text="REDIS DESKTOP CLIENT" FontSize="{DynamicResource Fs75}" FontWeight="SemiBold"
+                                   Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,1,0,0" />
+                    </StackPanel>
+                </StackPanel>
+
+                <Button Grid.Column="1" Style="{StaticResource BtnSecondary}" Width="400" Height="30"
+                        Padding="10,0" Margin="24,0" HorizontalAlignment="Center"
+                        HorizontalContentAlignment="Stretch"
+                        Command="{Binding OpenPaletteCommand}"
+                        WindowChrome.IsHitTestVisibleInChrome="True"
+                        ToolTip="{loc:Tr '全局搜索 (Ctrl+K)'}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="&#xE721;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs12}"
+                                   Foreground="{DynamicResource TextTertiaryBrush}" VerticalAlignment="Center" />
+                        <TextBlock Grid.Column="1" Text="{loc:Tr '搜索 Key、命令历史与页面…'}" FontSize="{DynamicResource Fs12}"
+                                   Foreground="{DynamicResource TextTertiaryBrush}" Margin="8,0,0,0"
+                                   VerticalAlignment="Center" />
+                        <Border Grid.Column="2" Background="{DynamicResource BgTagBrush}" CornerRadius="4"
+                                Padding="5,1" VerticalAlignment="Center">
+                            <TextBlock Text="Ctrl K" FontSize="{DynamicResource Fs95}" Foreground="{DynamicResource TextTertiaryBrush}" />
+                        </Border>
+                    </Grid>
+                </Button>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,8,0"
+                            WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Button Style="{StaticResource TitleBtn}" Click="OnMinimizeClick" ToolTip="{loc:Tr '最小化'}" Content="&#xE921;" />
+                    <Button Style="{StaticResource TitleBtn}" Click="OnMaximizeClick" ToolTip="{loc:Tr '最大化'}"
+                            Visibility="{Binding WindowState, RelativeSource={RelativeSource AncestorType=Window}, Converter={StaticResource WindowStateToVis}, ConverterParameter=normal}">
+                        <TextBlock Text="&#xE922;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs10}" />
+                    </Button>
+                    <Button Style="{StaticResource TitleBtn}" Click="OnMaximizeClick" ToolTip="{loc:Tr '还原'}"
+                            Visibility="{Binding WindowState, RelativeSource={RelativeSource AncestorType=Window}, Converter={StaticResource WindowStateToVis}, ConverterParameter=maximized}">
+                        <TextBlock Text="&#xE923;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs10}" />
+                    </Button>
+                    <Button Style="{StaticResource TitleCloseBtn}" Click="OnCloseClick" ToolTip="{loc:Tr '关闭'}" Content="&#xE711;" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- ═══════════════ 主体 ═══════════════ -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{Binding SidebarWidth, Converter={StaticResource DoubleToGridLength}}" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- 侧栏 -->
+            <Border Grid.Column="0" Background="{DynamicResource BgSidebarBrush}"
+                    BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,0,1,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock x:Name="NavLabel" Text="{loc:Tr '导航'}" Style="{StaticResource SectionLabel}"
+                               Margin="22,16,0,4"
+                               Visibility="{Binding IsSidebarCollapsed, Converter={StaticResource BoolToVis}, ConverterParameter=invert}" />
+
+                    <ListBox Grid.Row="1" ItemsSource="{Binding Navigation}" SelectedItem="{Binding SelectedNavigation}"
+                             Style="{StaticResource NavList}" Margin="0,2,0,6" ItemContainerStyle="{StaticResource NavItem}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate DataType="{x:Type vm:NavigationItemViewModel}">
+                                <Grid ToolTip="{Binding Title}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Width="26" Height="26" CornerRadius="7">
+                                        <Border.Style>
+                                            <Style TargetType="Border">
+                                                <Setter Property="Background" Value="Transparent" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
+                                                        <Setter Property="Background" Value="{DynamicResource PrimarySubtleBrush}" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Border.Style>
+                                        <TextBlock Text="{Binding Glyph}" FontFamily="{StaticResource IconFont}"
+                                                   FontSize="{DynamicResource Fs15}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                   Foreground="{DynamicResource TextSecondaryBrush}">
+                                            <TextBlock.Style>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="Foreground" Value="{DynamicResource TextSecondaryBrush}" />
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
+                                                            <Setter Property="Foreground" Value="{DynamicResource PrimaryBrush}" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBlock.Style>
+                                        </TextBlock>
+                                    </Border>
+                                    <TextBlock Grid.Column="1" Text="{Binding Title}" Margin="10,0,0,0" VerticalAlignment="Center"
+                                               Visibility="{Binding DataContext.IsSidebarCollapsed, RelativeSource={RelativeSource AncestorType=ListBox}, Converter={StaticResource BoolToVis}, ConverterParameter=invert}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <!-- 连接面板 -->
+                    <Grid Grid.Row="2" Visibility="{Binding IsSidebarCollapsed, Converter={StaticResource BoolToVis}, ConverterParameter=invert}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" Margin="22,8,12,4">
+                            <TextBlock Text="{loc:Tr '连接管理'}" Style="{StaticResource SectionLabel}" Margin="0" VerticalAlignment="Center" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Button Style="{StaticResource IconBtnSmall}" Command="{Binding Connections.AddConnectionCommand}"
+                                        ToolTip="{loc:Tr '新建连接'}" Content="&#xE710;" FontSize="{DynamicResource Fs11}" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid Grid.Row="1" Margin="14,4,14,6">
+                            <TextBox Style="{StaticResource SearchBox}" Text="{Binding Connections.SearchText, UpdateSourceTrigger=PropertyChanged}"
+                                     MinHeight="30" FontSize="{DynamicResource Fs12}" />
+                            <TextBlock Text="{loc:Tr '搜索连接…'}" FontSize="{DynamicResource Fs12}" Foreground="{DynamicResource TextTertiaryBrush}"
+                                       Margin="34,0,0,0" VerticalAlignment="Center" IsHitTestVisible="False"
+                                       Visibility="{Binding Connections.SearchText, Converter={StaticResource EmptyStringToVis}}" />
+                            <TextBlock Text="&#xE721;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs11}"
+                                       Foreground="{DynamicResource TextTertiaryBrush}" Margin="12,0,0,0"
+                                       VerticalAlignment="Center" IsHitTestVisible="False" />
+                        </Grid>
+
+                        <Grid Grid.Row="2">
+                            <ListBox x:Name="ConnectionList" ItemsSource="{Binding Connections.DirectoryItems}"
+                                     SelectedItem="{Binding Connections.SelectedConnection}"
+                                     Validation.ErrorTemplate="{x:Null}"
+                                     Style="{StaticResource ConnectionList}"
+                                     MouseDoubleClick="OnConnectionDoubleClick"
+                                     AllowDrop="True"
+                                     PreviewMouseLeftButtonDown="OnConnectionListPreviewMouseLeftButtonDown"
+                                     MouseMove="OnConnectionListMouseMove"
+                                     DragOver="OnConnectionListDragOver"
+                                     Drop="OnConnectionListDrop">
+                                <ListBox.ItemContainerStyle>
+                                    <Style TargetType="ListBoxItem" BasedOn="{StaticResource ConnectionCard}">
+                                        <Setter Property="AutomationProperties.Name" Value="{Binding AutomationName}" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsGroupHeader}" Value="True">
+                                                <Setter Property="Margin" Value="8,2,8,1" />
+                                                <Setter Property="Padding" Value="2,2" />
+                                                <Setter Property="Focusable" Value="False" />
+                                                <Setter Property="Cursor" Value="Arrow" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{Binding IsGroupHeader}" Value="False">
+                                                <Setter Property="Margin" Value="24,2,8,2" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </ListBox.ItemContainerStyle>
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <!-- 分组标题行（目录）：点击折叠/展开，拖拽连接到此可移动分组 -->
+                                            <Button Visibility="{Binding IsGroupHeader, Converter={StaticResource BoolToVis}}"
+                                                    Command="{Binding DataContext.Connections.ToggleGroupCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                    CommandParameter="{Binding Group}"
+                                                    AllowDrop="True"
+                                                    ToolTip="{loc:Tr '点击折叠/展开分组；拖拽连接到此可移动分组'}"
+                                                    DragOver="OnGroupHeaderDragOver"
+                                                    DragLeave="OnGroupHeaderDragLeave"
+                                                    Drop="OnGroupHeaderDrop">
+                                                <Button.Template>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <Border x:Name="HeaderBd" Background="{TemplateBinding Background}"
+                                                                BorderBrush="Transparent" BorderThickness="1"
+                                                                CornerRadius="6" Padding="6,3">
+                                                            <ContentPresenter />
+                                                        </Border>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                <Setter TargetName="HeaderBd" Property="Background" Value="{DynamicResource BgSidebarHoverBrush}" />
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Button.Template>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="*" />
+                                                        <ColumnDefinition Width="Auto" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <TextBlock Text="{Binding Group.Glyph}" FontFamily="{StaticResource IconFont}"
+                                                               FontSize="{DynamicResource Fs9}" VerticalAlignment="Center"
+                                                               Foreground="{DynamicResource TextTertiaryBrush}" />
+                                                    <TextBlock Grid.Column="1" Text="{Binding Group.Name}" Margin="5,0,0,0"
+                                                               FontSize="{DynamicResource Fs10}" FontWeight="SemiBold"
+                                                               VerticalAlignment="Center" TextTrimming="CharacterEllipsis"
+                                                               Foreground="{DynamicResource TextTertiaryBrush}" />
+                                                    <Border Grid.Column="2" Background="{DynamicResource BgTagBrush}"
+                                                            CornerRadius="4" Padding="5,0" VerticalAlignment="Center">
+                                                        <TextBlock Text="{Binding Group.Count}" FontSize="{DynamicResource Fs9}"
+                                                                   Foreground="{DynamicResource TextTertiaryBrush}" />
+                                                    </Border>
+                                                </Grid>
+                                            </Button>
+
+                                            <!-- 连接卡片：缩进显示在分组之下 -->
+                                            <Border Visibility="{Binding IsGroupHeader, Converter={StaticResource BoolToVis}, ConverterParameter=invert}">
+                                                <Border DataContext="{Binding Connection}">
+                                                    <Grid ToolTip="{loc:Tr '拖拽到分组标题可快速移动分组；右键可设置分组'}"
+                                                          ContextMenuOpening="OnCardContextMenuOpening">
+                                                        <Grid.ContextMenu>
+                                                            <ContextMenu DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}" />
+                                                        </Grid.ContextMenu>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                        </Grid.RowDefinitions>
+
+                                                        <Border Grid.RowSpan="3" Width="3" HorizontalAlignment="Left"
+                                                                Margin="-8,-9,0,-9" CornerRadius="1.5" IsHitTestVisible="False"
+                                                                Background="{Binding WarningColorHex, Converter={StaticResource StringToBrush}}"
+                                                                Visibility="{Binding HasWarningColor, Converter={StaticResource BoolToVis}}"
+                                                                ToolTip="{Binding WarningColorText}" />
+
+                                                        <Grid Grid.Row="0">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="Auto" />
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="Auto" />
+                                                                <ColumnDefinition Width="Auto" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Ellipse Width="8" Height="8" VerticalAlignment="Center">
+                                                                <Ellipse.Style>
+                                                                    <Style TargetType="Ellipse">
+                                                                        <Setter Property="Fill" Value="{DynamicResource DisconnectedBrush}" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding IsConnected}" Value="True">
+                                                                                <Setter Property="Fill" Value="{DynamicResource ConnectedBrush}" />
+                                                                            </DataTrigger>
+                                                                            <DataTrigger Binding="{Binding IsConnecting}" Value="True">
+                                                                                <Setter Property="Fill" Value="{DynamicResource WarningBrush}" />
+                                                                            </DataTrigger>
+                                                                            <DataTrigger Binding="{Binding IsFailed}" Value="True">
+                                                                                <Setter Property="Fill" Value="{DynamicResource DangerBrush}" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </Ellipse.Style>
+                                                            </Ellipse>
+                                                            <TextBlock Grid.Column="1" Text="{Binding Name}" FontSize="{DynamicResource Fs125}" FontWeight="SemiBold"
+                                                                       Margin="8,0,0,0" TextTrimming="CharacterEllipsis"
+                                                                       Foreground="{DynamicResource TextPrimaryBrush}" />
+                                                            <TextBlock Grid.Column="2" Text="&#xE7BA;" FontFamily="{StaticResource IconFont}"
+                                                                       FontSize="{DynamicResource Fs9}" VerticalAlignment="Center"
+                                                                       Margin="5,0,5,0"
+                                                                       Foreground="{Binding WarningColorHex, Converter={StaticResource StringToBrush}}"
+                                                                       ToolTip="{Binding WarningColorText}"
+                                                                       AutomationProperties.Name="{Binding WarningColorText}"
+                                                                       Visibility="{Binding HasWarningColor, Converter={StaticResource BoolToVis}}" />
+                                                            <Border Grid.Column="3" Background="{Binding Environment, Converter={StaticResource EnvironmentToBackground}}"
+                                                                    CornerRadius="5" Padding="5,1">
+                                                                <TextBlock Text="{Binding EnvironmentText}" FontSize="{DynamicResource Fs95}" FontWeight="SemiBold"
+                                                                           Foreground="{Binding Environment, Converter={StaticResource EnvironmentToBrush}}" />
+                                                            </Border>
+                                                        </Grid>
+
+                                                        <Grid Grid.Row="1" Margin="16,3,0,0">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="Auto" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <TextBlock Text="{Binding EndpointText}" FontSize="{DynamicResource Fs105}"
+                                                                       Foreground="{DynamicResource TextTertiaryBrush}"
+                                                                       TextTrimming="CharacterEllipsis" />
+                                                            <TextBlock Grid.Column="1" Text="{Binding LatencyText, StringFormat={loc:Tr '延迟 {0}'}}" FontSize="{DynamicResource Fs10}"
+                                                                       Foreground="{DynamicResource TextTertiaryBrush}" Margin="6,0,0,0" />
+                                                        </Grid>
+
+                                                        <Grid Grid.Row="2" Margin="16,6,0,0">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="Auto" />
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="Auto" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Button Style="{StaticResource BtnSmallGhost}" MinHeight="22" Padding="2,1"
+                                                                    Content="{loc:Tr '连接'}" FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource PrimaryDeepBrush}"
+                                                                    Command="{Binding DataContext.Connections.ConnectCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                                    CommandParameter="{Binding}"
+                                                                    Visibility="{Binding IsConnected, Converter={StaticResource BoolToVis}, ConverterParameter=invert}" />
+                                                            <Button Grid.Column="1" Style="{StaticResource BtnSmallGhost}" MinHeight="22" Padding="2,1"
+                                                                    Content="{loc:Tr '断开'}" FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource WarningBrush}"
+                                                                    HorizontalAlignment="Left"
+                                                                    Command="{Binding DataContext.Connections.DisconnectCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                                    CommandParameter="{Binding}"
+                                                                    Visibility="{Binding IsConnected, Converter={StaticResource BoolToVis}}" />
+                                                            <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                                                <Button Style="{StaticResource IconBtnSmall}" Width="22" Height="22" FontSize="{DynamicResource Fs10}"
+                                                                        Content="&#xE8C8;" ToolTip="{loc:Tr '复制连接配置（不含密码）'}"
+                                                                        Command="{Binding DataContext.Connections.CopyConfigCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                                        CommandParameter="{Binding}" />
+                                                                <Button Style="{StaticResource IconBtnSmall}" Width="22" Height="22" FontSize="{DynamicResource Fs10}"
+                                                                        Content="&#xE70F;" ToolTip="{loc:Tr '编辑连接'}"
+                                                                        Command="{Binding DataContext.Connections.EditConnectionCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                                        CommandParameter="{Binding}" />
+                                                                <Button Style="{StaticResource IconBtnSmall}" Width="22" Height="22" FontSize="{DynamicResource Fs10}"
+                                                                        Content="&#xE74D;" ToolTip="{loc:Tr '删除连接'}"
+                                                                        Foreground="{DynamicResource DangerBrush}"
+                                                                        Command="{Binding DataContext.Connections.RequestDeleteCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                                                        CommandParameter="{Binding}" />
+                                                            </StackPanel>
+                                                        </Grid>
+                                                    </Grid>
+                                                </Border>
+                                            </Border>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+
+                            <StackPanel VerticalAlignment="Center" Margin="20,0"
+                                        Visibility="{Binding Connections.IsEmpty, Converter={StaticResource BoolToVis}}">
+                                <TextBlock Text="&#xE968;" Style="{StaticResource EmptyIcon}" />
+                                <TextBlock Text="{loc:Tr '还没有连接'}" Style="{StaticResource EmptyTitle}" />
+                                <TextBlock Text="{loc:Tr '添加一个 Redis 连接开始浏览数据'}" Style="{StaticResource EmptyHint}" />
+                                <Button Style="{StaticResource BtnSoft}" Content="{loc:Tr '新建连接'}" Margin="0,14,0,0"
+                                        HorizontalAlignment="Center"
+                                        Command="{Binding Connections.AddConnectionCommand}" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+
+                    <!-- 折叠态底部按钮 -->
+                    <StackPanel Grid.Row="3" Margin="0,8,0,12"
+                                Visibility="{Binding IsSidebarCollapsed, Converter={StaticResource BoolToVis}}">
+                        <Button Style="{StaticResource IconBtn}" HorizontalAlignment="Center" Margin="0,4"
+                                Command="{Binding Connections.AddConnectionCommand}" ToolTip="{loc:Tr '新建连接'}" Content="&#xE710;" />
+                        <Button Style="{StaticResource IconBtn}" HorizontalAlignment="Center" Margin="0,4"
+                                Command="{Binding ToggleSidebarCommand}" ToolTip="{loc:Tr '展开侧栏'}" Content="&#xE76C;" />
+                    </StackPanel>
+
+                    <Button Grid.Row="3" Style="{StaticResource BtnGhost}" Margin="12,8,12,10"
+                            HorizontalContentAlignment="Left" Padding="10,7"
+                            Command="{Binding ToggleSidebarCommand}"
+                            Visibility="{Binding IsSidebarCollapsed, Converter={StaticResource BoolToVis}, ConverterParameter=invert}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE76B;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs11}"
+                                       VerticalAlignment="Center" Foreground="{DynamicResource TextTertiaryBrush}" />
+                            <TextBlock Text="{loc:Tr '收起侧栏'}" FontSize="{DynamicResource Fs115}" Margin="8,0,0,0"
+                                       Foreground="{DynamicResource TextTertiaryBrush}" />
+                        </StackPanel>
+                    </Button>
+                </Grid>
+            </Border>
+
+            <!-- 内容区 -->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,0,0,1"
+                        Padding="24,14,20,14" Background="{DynamicResource BgCardBrush}"
+                        Visibility="{Binding IsBrowserPage, Converter={StaticResource BoolToVis}, ConverterParameter=invert}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="{Binding SelectedNavigation.Title}" Style="{StaticResource PageTitle}" FontSize="{DynamicResource Fs18}" />
+                            <TextBlock Text="{Binding SelectedNavigation.Description}" Style="{StaticResource PageSubtitle}" />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                            <Border Background="{DynamicResource DangerLightBrush}" CornerRadius="6" Padding="8,4" Margin="0,0,8,0"
+                                    Visibility="{Binding IsProduction, Converter={StaticResource BoolToVis}}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE7BA;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs10}"
+                                               Foreground="{DynamicResource DangerBrush}" VerticalAlignment="Center" />
+                                    <TextBlock Text="{loc:Tr '生产环境'}" FontSize="{DynamicResource Fs105}" FontWeight="SemiBold" Margin="5,0,0,0"
+                                               Foreground="{DynamicResource DangerBrush}" />
+                                </StackPanel>
+                            </Border>
+                            <Border Background="{DynamicResource WarningLightBrush}" CornerRadius="6" Padding="8,4" Margin="0,0,8,0"
+                                    Visibility="{Binding IsReadOnlyConnection, Converter={StaticResource BoolToVis}}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE72E;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs10}"
+                                               Foreground="{DynamicResource WarningBrush}" VerticalAlignment="Center" />
+                                    <TextBlock Text="{loc:Tr '只读模式'}" FontSize="{DynamicResource Fs105}" FontWeight="SemiBold" Margin="5,0,0,0"
+                                               Foreground="{DynamicResource WarningBrush}" />
+                                </StackPanel>
+                            </Border>
+
+                            <TextBlock Text="DB" FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}"
+                                       VerticalAlignment="Center" Margin="2,0,6,0" />
+                            <ComboBox Style="{StaticResource ComboModern}" Width="78" Height="30" MinHeight="30"
+                                      ItemsSource="{Binding DatabaseOptions}" SelectedItem="{Binding DatabaseIndex}"
+                                      IsEnabled="{Binding IsConnected}" Margin="0,0,10,0" />
+                            <Button Style="{StaticResource IconBtn}" Command="{Binding RefreshCurrentPageCommand}"
+                                    ToolTip="{loc:Tr '刷新当前页面 (F5)'}" Content="&#xE72C;" />
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <ContentControl Grid.Row="1" Content="{Binding CurrentPage}" Margin="0" />
+            </Grid>
+        </Grid>
+
+        <!-- ═══════════════ 状态栏 ═══════════════ -->
+        <Border Grid.Row="2" Background="{DynamicResource BgStatusBarBrush}"
+                BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,1,0,0">
+            <Grid Margin="14,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Ellipse Width="7" Height="7"
+                             Fill="{Binding IsConnected, Converter={StaticResource BoolToBrush}, ConverterParameter=ConnectedBrush|DisconnectedBrush}" />
+                    <TextBlock Text="{Binding ConnectionSummary}" FontSize="{DynamicResource Fs11}" Margin="7,0,0,0"
+                               Foreground="{DynamicResource TextSecondaryBrush}" TextTrimming="CharacterEllipsis" MaxWidth="420" />
+                    <TextBlock Text="{Binding DatabaseContextText}" FontSize="{DynamicResource Fs11}" Margin="12,0,0,0"
+                               Foreground="{DynamicResource TextTertiaryBrush}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}"
+                               Text="{Binding ActiveConnection.RedisVersion, StringFormat='Redis {0}'}" Margin="0,0,12,0" />
+                    <TextBlock FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}"
+                               Text="{Binding ActiveConnection.LatencyText, StringFormat='PING {0}'}" Margin="0,0,12,0" />
+                    <TextBlock FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}"
+                               Text="{Binding ActiveConnection.KeyCount, StringFormat={loc:Tr '当前 DB {0:N0} Keys'}}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="{loc:Tr '数据仅保存在本机，不上传'}" FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}" />
+                    <TextBlock Text="·" FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}" Margin="8,0" />
+                    <TextBlock Text="WinRedis 1.0" FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- ═══════════════ 忙碌遮罩 ═══════════════ -->
+        <Grid Grid.RowSpan="3" Background="{DynamicResource BgOverlayBrush}"
+              Visibility="{Binding IsBusy, Converter={StaticResource BoolToVis}}" Panel.ZIndex="50">
+            <Border Style="{StaticResource Card}" Width="330" Padding="26,22" HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Effect="{StaticResource CardShadow}">
+                <StackPanel HorizontalAlignment="Center">
+                    <Grid Width="34" Height="34" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,14">
+                        <Grid.RenderTransform>
+                            <RotateTransform x:Name="BusyRotate" />
+                        </Grid.RenderTransform>
+                        <Ellipse Stroke="{DynamicResource BorderLightBrush}" StrokeThickness="3" />
+                        <Path Data="M 17 0 A 17 17 0 0 1 34 17" Stroke="{DynamicResource PrimaryBrush}"
+                              StrokeThickness="3" StrokeStartLineCap="Round" StrokeEndLineCap="Round" />
+                        <Grid.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard RepeatBehavior="Forever">
+                                        <DoubleAnimation Storyboard.TargetName="BusyRotate"
+                                                         Storyboard.TargetProperty="Angle"
+                                                         From="0" To="360" Duration="0:0:0.9" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Grid.Triggers>
+                    </Grid>
+                    <TextBlock Text="{Binding BusyText}" HorizontalAlignment="Center" FontSize="{DynamicResource Fs13}"
+                               Foreground="{DynamicResource TextPrimaryBrush}" TextWrapping="Wrap" TextAlignment="Center" />
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- ═══════════════ Toast ═══════════════ -->
+        <Border Grid.RowSpan="3" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Margin="0,0,22,42" MaxWidth="460" Panel.ZIndex="60"
+                Background="{DynamicResource BgCardBrush}" BorderThickness="1" CornerRadius="10"
+                Padding="14,10" Effect="{StaticResource CardShadow}"
+                Visibility="{Binding IsToastVisible, Converter={StaticResource BoolToVis}}">
+            <Border.Style>
+                <Style TargetType="Border">
+                    <Setter Property="BorderBrush" Value="{DynamicResource BorderLightBrush}" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsToastError}" Value="True">
+                            <Setter Property="BorderBrush" Value="{DynamicResource DangerBrush}" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="ToastIcon" Text="&#xE73E;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs14}"
+                           VerticalAlignment="Top" Margin="0,2,0,0"
+                           Foreground="{Binding IsToastError, Converter={StaticResource BoolToBrush}, ConverterParameter=DangerBrush|SuccessBrush}" />
+                <TextBlock Grid.Column="1" Text="{Binding ToastMessage}" Margin="9,0,10,0" TextWrapping="Wrap"
+                           FontSize="{DynamicResource Fs125}" Foreground="{DynamicResource TextPrimaryBrush}" />
+                <Button Grid.Column="2" Style="{StaticResource IconBtnSmall}" Width="20" Height="20" FontSize="{DynamicResource Fs9}"
+                        Content="&#xE711;" Command="{Binding DismissToastCommand}" VerticalAlignment="Top" />
+            </Grid>
+        </Border>
+
+        <!-- ═══════════════ 命令面板 ═══════════════ -->
+        <Grid Grid.RowSpan="3" Background="{DynamicResource BgOverlayBrush}" Panel.ZIndex="70"
+              Visibility="{Binding IsPaletteOpen, Converter={StaticResource BoolToVis}}">
+            <Border Width="620" MaxHeight="480" VerticalAlignment="Top" Margin="0,110,0,0"
+                    Background="{DynamicResource BgCardBrush}" BorderBrush="{DynamicResource BorderLightBrush}"
+                    BorderThickness="1" CornerRadius="14" Effect="{StaticResource CardShadow}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Margin="16,12">
+                        <TextBox x:Name="PaletteSearchBox" Style="{StaticResource InputDefault}" MinHeight="40"
+                                 FontSize="{DynamicResource Fs14}" Text="{Binding PaletteQuery, UpdateSourceTrigger=PropertyChanged}"
+                                 VerticalContentAlignment="Center" Padding="38,7,12,7" />
+                        <TextBlock Text="&#xE721;" FontFamily="{StaticResource IconFont}" FontSize="{DynamicResource Fs14}"
+                                   Foreground="{DynamicResource TextTertiaryBrush}" Margin="14,0,0,0"
+                                   VerticalAlignment="Center" IsHitTestVisible="False" />
+                    </Grid>
+
+                    <ListBox x:Name="PaletteList" Grid.Row="1" ItemsSource="{Binding PaletteResults}"
+                             SelectedItem="{Binding SelectedPaletteItem}" Style="{StaticResource ListClean}"
+                             ItemContainerStyle="{StaticResource KeyRow}"
+                             Padding="8,0,8,8" MouseDoubleClick="OnPaletteDoubleClick">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate DataType="{x:Type vm:PaletteItemViewModel}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Style="{StaticResource TagBadge}" Background="{DynamicResource PrimaryLightBrush}"
+                                            VerticalAlignment="Top" Margin="0,1,0,0">
+                                        <TextBlock Text="{Binding Kind}" FontSize="{DynamicResource Fs95}" FontWeight="SemiBold"
+                                                   Foreground="{DynamicResource PrimaryDeepBrush}" />
+                                    </Border>
+                                    <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                                        <TextBlock Text="{Binding Title}" FontSize="{DynamicResource Fs13}" TextTrimming="CharacterEllipsis" />
+                                        <TextBlock Text="{Binding Subtitle}" FontSize="{DynamicResource Fs11}" Margin="0,2,0,0"
+                                                   Foreground="{DynamicResource TextTertiaryBrush}" TextTrimming="CharacterEllipsis" />
+                                    </StackPanel>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <TextBlock Grid.Row="1" Text="{loc:Tr '没有匹配的结果'}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                               Foreground="{DynamicResource TextTertiaryBrush}"
+                               Visibility="{Binding IsPaletteEmpty, Converter={StaticResource BoolToVis}}" />
+
+                    <Border Grid.Row="2" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,1,0,0"
+                            Padding="14,8">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{loc:Tr '↑↓ 选择'}" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource TextTertiaryBrush}" />
+                            <TextBlock Text="·" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource TextTertiaryBrush}" Margin="8,0" />
+                            <TextBlock Text="{loc:Tr 'Enter 执行'}" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource TextTertiaryBrush}" />
+                            <TextBlock Text="·" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource TextTertiaryBrush}" Margin="8,0" />
+                            <TextBlock Text="{loc:Tr 'Esc 关闭'}" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource TextTertiaryBrush}" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

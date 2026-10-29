@@ -1,0 +1,14 @@
+{
+  "关闭 WinRedis": "Close WinRedis",
+  "最小化到系统托盘后 WinRedis 继续在后台运行，可随时从托盘图标恢复窗口；也可以直接退出。": "Minimize to the system tray to keep WinRedis running in the background; restore it from the tray icon anytime, or quit now.",
+  "记住我的选择（可在设置中修改）": "Remember my choice (can be changed in Settings)",
+  "最小化到托盘": "Minimize to tray",
+  "直接退出": "Quit",
+  "显示主窗口": "Show main window",
+  "退出": "Quit",
+  "WinRedis 仍在后台运行，可在此图标恢复窗口。": "WinRedis is still running in the background. Use this icon to restore the window.",
+  "关闭主窗口时": "When closing the main window",
+  "每次询问": "Ask every time",
+  "每次询问、最小化到系统托盘继续后台运行，或直接退出": "Ask every time, minimize to the tray and keep running, or quit directly",
+  "退出时发生错误：": "Error while exiting: "
+}

@@ -1,0 +1,77 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ═══ 奶糖主题（低饱和浅色：暖米 + 琥珀） ═══ -->
+
+    <!-- 品牌色 -->
+    <SolidColorBrush x:Key="PrimaryBrush" Color="#9C6528" />
+    <SolidColorBrush x:Key="PrimaryHoverBrush" Color="#83521E" />
+    <SolidColorBrush x:Key="PrimaryLightBrush" Color="#FBF2E4" />
+    <SolidColorBrush x:Key="PrimarySubtleBrush" Color="#F3E2C8" />
+    <SolidColorBrush x:Key="PrimaryDeepBrush" Color="#74471A" />
+
+    <!-- 背景 -->
+    <SolidColorBrush x:Key="BgAppBrush" Color="#FBF7EF" />
+    <SolidColorBrush x:Key="BgCardBrush" Color="#FFFDF8" />
+    <SolidColorBrush x:Key="BgSidebarBrush" Color="#F3EBDD" />
+    <SolidColorBrush x:Key="BgSidebarHoverBrush" Color="#EBDFCB" />
+    <SolidColorBrush x:Key="BgSidebarActiveBrush" Color="#E3D4BB" />
+    <SolidColorBrush x:Key="BgInputBrush" Color="#F7F0E4" />
+    <SolidColorBrush x:Key="BgTagBrush" Color="#EDE3D2" />
+    <SolidColorBrush x:Key="BgTerminalBrush" Color="#261E16" />
+    <SolidColorBrush x:Key="BgToolbarBrush" Color="#FDF9F2" />
+    <SolidColorBrush x:Key="BgStatusBarBrush" Color="#FDF9F2" />
+    <SolidColorBrush x:Key="BgOverlayBrush" Color="#8033221A" />
+
+    <!-- 文字 -->
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#2A2118" />
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#6F6253" />
+    <SolidColorBrush x:Key="TextTertiaryBrush" Color="#9A8C7A" />
+    <SolidColorBrush x:Key="TextInverseBrush" Color="#FBF7EF" />
+    <SolidColorBrush x:Key="TextSidebarBrush" Color="#463A2C" />
+    <SolidColorBrush x:Key="TextSidebarDimBrush" Color="#8F816F" />
+
+    <!-- 边框 -->
+    <SolidColorBrush x:Key="BorderLightBrush" Color="#E6D9C5" />
+    <SolidColorBrush x:Key="BorderLighterBrush" Color="#F2E9DB" />
+    <SolidColorBrush x:Key="BorderStrongBrush" Color="#CDBCA3" />
+    <SolidColorBrush x:Key="BorderFocusBrush" Color="#9C6528" />
+
+    <!-- 环境色 -->
+    <SolidColorBrush x:Key="EnvDevBrush" Color="#10B981" />
+    <SolidColorBrush x:Key="EnvTestBrush" Color="#3B82F6" />
+    <SolidColorBrush x:Key="EnvStagingBrush" Color="#F59E0B" />
+    <SolidColorBrush x:Key="EnvProdBrush" Color="#EF4444" />
+    <SolidColorBrush x:Key="EnvProdBgBrush" Color="#FEF2F2" />
+
+    <!-- 状态色 -->
+    <SolidColorBrush x:Key="ConnectedBrush" Color="#10B981" />
+    <SolidColorBrush x:Key="DisconnectedBrush" Color="#CDBCA3" />
+    <SolidColorBrush x:Key="SuccessBrush" Color="#10B981" />
+    <SolidColorBrush x:Key="WarningBrush" Color="#F59E0B" />
+    <SolidColorBrush x:Key="WarningLightBrush" Color="#FFFBEB" />
+    <SolidColorBrush x:Key="DangerBrush" Color="#EF4444" />
+    <SolidColorBrush x:Key="DangerLightBrush" Color="#FEF2F2" />
+    <SolidColorBrush x:Key="InfoBrush" Color="#3B82F6" />
+    <SolidColorBrush x:Key="InfoLightBrush" Color="#EFF6FF" />
+
+    <!-- Key 类型色 -->
+    <SolidColorBrush x:Key="TypeStringBg" Color="#EDE9FE" />
+    <SolidColorBrush x:Key="TypeStringFg" Color="#7C3AED" />
+    <SolidColorBrush x:Key="TypeHashBg" Color="#FEF3C7" />
+    <SolidColorBrush x:Key="TypeHashFg" Color="#D97706" />
+    <SolidColorBrush x:Key="TypeListBg" Color="#DBEAFE" />
+    <SolidColorBrush x:Key="TypeListFg" Color="#2563EB" />
+    <SolidColorBrush x:Key="TypeSetBg" Color="#D1FAE5" />
+    <SolidColorBrush x:Key="TypeSetFg" Color="#059669" />
+    <SolidColorBrush x:Key="TypeZsetBg" Color="#FCE7F3" />
+    <SolidColorBrush x:Key="TypeZsetFg" Color="#DB2777" />
+    <SolidColorBrush x:Key="TypeStreamBg" Color="#CFFAFE" />
+    <SolidColorBrush x:Key="TypeStreamFg" Color="#0891B2" />
+    <SolidColorBrush x:Key="TypeDefaultBg" Color="#EDE3D2" />
+    <SolidColorBrush x:Key="TypeDefaultFg" Color="#6F6253" />
+
+    <!-- 强调色上的文字（始终白色） -->
+    <SolidColorBrush x:Key="TextOnAccentBrush" Color="#FFFFFF" />
+
+</ResourceDictionary>

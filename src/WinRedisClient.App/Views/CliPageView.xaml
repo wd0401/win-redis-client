@@ -1,0 +1,212 @@
+<UserControl x:Class="WinRedisClient.App.Views.CliPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:WinRedisClient.App.Localization"
+             xmlns:vm="clr-namespace:WinRedisClient.Presentation.ViewModels;assembly=WinRedisClient.Presentation"
+             Background="Transparent">
+    <Grid Margin="16,14,16,14">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="420" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="286" MinWidth="220" />
+        </Grid.ColumnDefinitions>
+
+        <!-- 终端 -->
+        <Border Grid.Column="0" Style="{StaticResource Card}" Padding="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- 终端标题栏 -->
+                <Border Background="{DynamicResource BgTerminalBrush}" CornerRadius="12,12,0,0" Padding="14,9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Ellipse Width="9" Height="9" Fill="#EF4444" />
+                            <Ellipse Width="9" Height="9" Fill="#F59E0B" Margin="6,0,0,0" />
+                            <Ellipse Width="9" Height="9" Fill="#10B981" Margin="6,0,0,0" />
+                        </StackPanel>
+                        <TextBlock Grid.Column="1" Text="{Binding ContextText}" FontFamily="{StaticResource MonoFont}"
+                                   FontSize="{DynamicResource Fs11}" Foreground="#64748B" Margin="14,0,0,0" VerticalAlignment="Center"
+                                   TextTrimming="CharacterEllipsis" />
+                        <StackPanel Grid.Column="2" Orientation="Horizontal">
+                            <Border Background="#1E293B" CornerRadius="5" Padding="7,3" Margin="0,0,8,0"
+                                    Visibility="{Binding IsReadOnly, Converter={StaticResource BoolToVis}}">
+                                <TextBlock Text="{loc:Tr '只读'}" FontSize="{DynamicResource Fs95}" Foreground="#FBBF24" FontWeight="SemiBold" />
+                            </Border>
+                            <Button Style="{StaticResource IconBtnSmall}" Width="24" Height="24" FontSize="{DynamicResource Fs11}"
+                                    Content="&#xE8C8;" ToolTip="{loc:Tr '复制全部输出'}"
+                                    Foreground="#94A3B8" Command="{Binding CopyOutputCommand}" />
+                            <Button Style="{StaticResource IconBtnSmall}" Width="24" Height="24" FontSize="{DynamicResource Fs11}"
+                                    Content="&#xE74D;" ToolTip="{loc:Tr '清空输出'}"
+                                    Foreground="#94A3B8" Command="{Binding ClearLinesCommand}" Margin="4,0,0,0" />
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <!-- 输出 -->
+                <ListBox x:Name="OutputList" Grid.Row="1" ItemsSource="{Binding Lines}"
+                         Background="{DynamicResource BgTerminalBrush}" BorderThickness="0"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                         ScrollViewer.VerticalScrollBarVisibility="Auto"
+                         Padding="10,10" Focusable="False">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Focusable" Value="False" />
+                            <Setter Property="Padding" Value="0" />
+                            <Setter Property="Margin" Value="0,0,0,2" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate DataType="{x:Type vm:CliLineViewModel}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding TimeText}" FontFamily="{StaticResource MonoFont}" FontSize="{DynamicResource Fs105}"
+                                           Foreground="#475569" VerticalAlignment="Top" Margin="0,2,10,0" />
+                                <TextBlock Grid.Column="1" Text="{Binding Text}" FontFamily="{StaticResource MonoFont}"
+                                           FontSize="{DynamicResource Fs12}" TextWrapping="Wrap" VerticalAlignment="Top">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Foreground" Value="#E2E8F0" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Kind}" Value="command">
+                                                    <Setter Property="Foreground" Value="#A5B4FC" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Kind}" Value="info">
+                                                    <Setter Property="Foreground" Value="#64748B" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Kind}" Value="error">
+                                                    <Setter Property="Foreground" Value="#FCA5A5" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Kind}" Value="warning">
+                                                    <Setter Property="Foreground" Value="#FCD34D" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <!-- 输入 -->
+                <Border Grid.Row="2" Background="#0B1020" BorderBrush="#1E293B" BorderThickness="0,1,0,0"
+                        Padding="12,10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding PromptText}" FontFamily="{StaticResource MonoFont}" FontSize="{DynamicResource Fs125}"
+                                   Foreground="#10B981" VerticalAlignment="Center" Margin="0,0,10,0" />
+                        <TextBox x:Name="CommandInput" Grid.Column="1" Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}"
+                                 FontFamily="{StaticResource MonoFont}" FontSize="{DynamicResource Fs125}" Background="#0B1020"
+                                 BorderThickness="0" Foreground="#E2E8F0" CaretBrush="#A5B4FC"
+                                 VerticalContentAlignment="Center" Padding="0,6" MinHeight="30"
+                                 IsEnabled="{Binding IsExecuting, Converter={StaticResource InverseBool}}"
+                                 PreviewKeyDown="OnCommandInputKeyDown" />
+                        <TextBlock Grid.Column="1" Text="{loc:Tr '输入 Redis 命令，Enter 执行…'}" FontFamily="{StaticResource MonoFont}"
+                                   FontSize="{DynamicResource Fs12}" Foreground="#475569" VerticalAlignment="Center" Margin="0,0,0,0"
+                                   IsHitTestVisible="False"
+                                   Visibility="{Binding Input, Converter={StaticResource EmptyStringToVis}}" />
+                        <Button Grid.Column="2" Style="{StaticResource BtnPrimary}" Content="{loc:Tr '执行'}"
+                                Command="{Binding ExecuteCommand}" FontSize="{DynamicResource Fs12}" Padding="14,6"
+                                IsEnabled="{Binding IsExecuting, Converter={StaticResource InverseBool}}"
+                                Visibility="{Binding IsReadOnly, Converter={StaticResource BoolToVis}, ConverterParameter=invert}" />
+                        <Border Grid.Column="2" Background="#1E293B" CornerRadius="6" Padding="10,5" VerticalAlignment="Center"
+                                Visibility="{Binding IsReadOnly, Converter={StaticResource BoolToVis}}">
+                            <TextBlock Text="{loc:Tr '只读连接'}" FontSize="{DynamicResource Fs105}" Foreground="#FBBF24" />
+                        </Border>
+                    </Grid>
+                </Border>
+
+                <!-- 状态栏 -->
+                <Border Grid.Row="3" Background="#0B1020" CornerRadius="0,0,12,12" Padding="12,6">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Border CornerRadius="5" Padding="7,2" Background="#111A2E">
+                            <TextBlock Text="{Binding RiskText}" FontSize="{DynamicResource Fs10}" FontWeight="SemiBold"
+                                       Foreground="{Binding RiskColor, Converter={StaticResource StringToBrush}}" />
+                        </Border>
+                        <TextBlock Grid.Column="1" Text="{Binding StatusText}" FontSize="{DynamicResource Fs105}" Foreground="#64748B"
+                                   Margin="10,0,0,0" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                        <TextBlock Grid.Column="2" Text="{Binding LastDurationText}" FontFamily="{StaticResource MonoFont}"
+                                   FontSize="{DynamicResource Fs105}" Foreground="#64748B" VerticalAlignment="Center" />
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- 历史 -->
+        <Border Grid.Column="2" Style="{StaticResource Card}" Padding="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid Margin="14,12,10,8">
+                    <TextBlock Text="{loc:Tr '命令历史'}" Style="{StaticResource CardTitle}" />
+                    <Button Style="{StaticResource BtnSmallGhost}" Content="{loc:Tr '清空'}" HorizontalAlignment="Right"
+                            FontSize="{DynamicResource Fs105}" Padding="8,3" Command="{Binding ClearHistoryCommand}"
+                            IsEnabled="{Binding HasHistory}" />
+                </Grid>
+
+                <ListBox Grid.Row="1" ItemsSource="{Binding History}" Style="{StaticResource ListClean}"
+                         ItemContainerStyle="{StaticResource KeyRow}" Margin="8,0,8,6"
+                         MouseDoubleClick="OnHistoryDoubleClick">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Command}" FontFamily="{StaticResource MonoFont}" FontSize="{DynamicResource Fs115}"
+                                           TextTrimming="CharacterEllipsis" ToolTip="{Binding Command}" />
+                                <TextBlock Text="{Binding ExecutedAt, StringFormat={}{0:MM-dd HH:mm:ss}}" FontSize="{DynamicResource Fs10}"
+                                           Foreground="{DynamicResource TextTertiaryBrush}" Margin="0,3,0,0" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <ListBox.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="{loc:Tr '放入输入框'}"
+                                      Command="{Binding PlacementTarget.DataContext.UseHistoryCommand, RelativeSource={RelativeSource AncestorType=ContextMenu}}"
+                                      CommandParameter="{Binding PlacementTarget.SelectedItem, RelativeSource={RelativeSource AncestorType=ContextMenu}}" />
+                        </ContextMenu>
+                    </ListBox.ContextMenu>
+                </ListBox>
+
+                <TextBlock Grid.Row="1" Text="{loc:Tr '暂无命令历史'}" Style="{StaticResource EmptyHint}" VerticalAlignment="Center"
+                           Visibility="{Binding HasHistory, Converter={StaticResource BoolToVis}, ConverterParameter=invert}" />
+
+                <Border Grid.Row="2" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,1,0,0"
+                        Padding="14,8">
+                    <TextBlock Text="{loc:Tr '双击历史命令可填入输入框；认证类命令不会记录。'}" FontSize="{DynamicResource Fs10}"
+                               Foreground="{DynamicResource TextTertiaryBrush}" TextWrapping="Wrap" />
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

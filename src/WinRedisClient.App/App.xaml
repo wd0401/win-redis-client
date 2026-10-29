@@ -1,0 +1,81 @@
+<Application x:Class="WinRedisClient.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WinRedisClient.App"
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             xmlns:vm="clr-namespace:WinRedisClient.Presentation.ViewModels;assembly=WinRedisClient.Presentation"
+             xmlns:views="clr-namespace:WinRedisClient.App.Views"
+             ShutdownMode="OnMainWindowClose">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- 索引 0：颜色主题（ThemeManager 运行时替换） -->
+                <ResourceDictionary Source="Themes/Light.xaml" />
+                <!-- 索引 1：控件样式 -->
+                <ResourceDictionary Source="Themes/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- 字体大小：XAML 统一引用这些键，FontScaleManager 运行时按用户设置缩放 -->
+            <sys:Double x:Key="Fs75">7.5</sys:Double>
+            <sys:Double x:Key="Fs9">9</sys:Double>
+            <sys:Double x:Key="Fs95">9.5</sys:Double>
+            <sys:Double x:Key="Fs10">10</sys:Double>
+            <sys:Double x:Key="Fs105">10.5</sys:Double>
+            <sys:Double x:Key="Fs11">11</sys:Double>
+            <sys:Double x:Key="Fs115">11.5</sys:Double>
+            <sys:Double x:Key="Fs12">12</sys:Double>
+            <sys:Double x:Key="Fs125">12.5</sys:Double>
+            <sys:Double x:Key="Fs13">13</sys:Double>
+            <sys:Double x:Key="Fs14">14</sys:Double>
+            <sys:Double x:Key="Fs145">14.5</sys:Double>
+            <sys:Double x:Key="Fs15">15</sys:Double>
+            <sys:Double x:Key="Fs16">16</sys:Double>
+            <sys:Double x:Key="Fs17">17</sys:Double>
+            <sys:Double x:Key="Fs18">18</sys:Double>
+            <sys:Double x:Key="Fs20">20</sys:Double>
+            <sys:Double x:Key="Fs23">23</sys:Double>
+            <sys:Double x:Key="Fs26">26</sys:Double>
+            <sys:Double x:Key="Fs30">30</sys:Double>
+            <sys:Double x:Key="Fs36">36</sys:Double>
+
+            <!-- 转换器 -->
+            <local:BoolToVisibilityConverter x:Key="BoolToVis" />
+            <local:NullToVisibilityConverter x:Key="NullToVis" />
+            <local:EmptyStringToVisibilityConverter x:Key="EmptyStringToVis" />
+            <local:CountToVisibilityConverter x:Key="CountToVis" />
+            <local:GreaterThanZeroToVisibilityConverter x:Key="GreaterThanZeroToVis" />
+            <local:InverseBoolConverter x:Key="InverseBool" />
+            <local:EnvironmentToBrushConverter x:Key="EnvironmentToBrush" />
+            <local:EnvironmentToBackgroundConverter x:Key="EnvironmentToBackground" />
+            <local:KeyTypeToBrushConverter x:Key="KeyTypeToBrush" />
+            <local:DiffKindToBrushConverter x:Key="DiffKindToBrush" />
+            <local:StringToBrushConverter x:Key="StringToBrush" />
+            <local:BoolToBrushConverter x:Key="BoolToBrush" />
+            <local:WindowStateToVisibilityConverter x:Key="WindowStateToVis" />
+            <local:DoubleToGridLengthConverter x:Key="DoubleToGridLength" />
+
+            <!-- 页面模板 -->
+            <DataTemplate DataType="{x:Type vm:BrowserPageViewModel}">
+                <views:BrowserPageView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:MonitorViewModel}">
+                <views:MonitorPageView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:CliViewModel}">
+                <views:CliPageView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DiffViewModel}">
+                <views:DiffPageView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:BigKeyViewModel}">
+                <views:BigKeyPageView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:HistoryViewModel}">
+                <views:HistoryPageView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+                <views:SettingsPageView />
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,5874 @@
+[
+  {
+    "file": "WinRedisClient.App/App.xaml.cs",
+    "line": 49,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "WinRedis 启动失败：\\\\n{0}",
+    "raw": "\"WinRedis 启动失败：\\\\n{0}\""
+  },
+  {
+    "file": "WinRedisClient.App/App.xaml.cs",
+    "line": 71,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未处理异常：\\\\n{0}",
+    "raw": "\"未处理异常：\\\\n{0}\""
+  },
+  {
+    "file": "WinRedisClient.App/App.xaml.cs",
+    "line": 80,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "严重错误：\\\\n{0}",
+    "raw": "\"严重错误：\\\\n{0}\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/ConfirmationDialog.xaml.cs",
+    "line": 41,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该操作影响生产数据，请输入“{0}”以确认：",
+    "raw": "\"该操作影响生产数据，请输入“{0}”以确认：\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/ConnectionDialog.xaml.cs",
+    "line": 48,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "选择 SSH 私钥文件",
+    "raw": "\"选择 SSH 私钥文件\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/ConnectionDialog.xaml.cs",
+    "line": 51,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 私钥 (*.pem;*.key;id_rsa;id_ed25519;id_ecdsa)|*.pem;*.key;id_rsa;id_ed25519;id_ecdsa|所有文件 (*.*)|*.*",
+    "raw": "\"SSH 私钥 (*.pem;*.key;id_rsa;id_ed25519;id_ecdsa)|*.pem;*.key;id_rsa;id_ed25519;id_ecdsa|所有文件 (*.*)|*.*\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 46,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段",
+    "raw": "\"字段\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 47,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "值",
+    "raw": "\"值\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 48,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写入 1 个初始字段",
+    "raw": "\"写入 1 个初始字段\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 53,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员",
+    "raw": "\"成员\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 55,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Score 必须是数字，例如 1、2.5",
+    "raw": "\"Score 必须是数字，例如 1、2.5\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 60,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段",
+    "raw": "\"字段\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 61,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "值",
+    "raw": "\"值\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 62,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写入一条消息（XADD *）",
+    "raw": "\"写入一条消息（XADD *）\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 67,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "元素",
+    "raw": "\"元素\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 68,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "每行一个元素，按顺序 RPUSH，最多 500 行",
+    "raw": "\"每行一个元素，按顺序 RPUSH，最多 500 行\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 73,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员",
+    "raw": "\"成员\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 74,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "每行一个成员，重复自动去重，最多 500 行",
+    "raw": "\"每行一个成员，重复自动去重，最多 500 行\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 79,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "值",
+    "raw": "\"值\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 80,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "String 初始值，支持多行文本",
+    "raw": "\"String 初始值，支持多行文本\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 92,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 名称不能为空",
+    "raw": "\"Key 名称不能为空\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 112,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Hash 字段不能为空",
+    "raw": "\"Hash 字段不能为空\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 121,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "ZSet 成员不能为空",
+    "raw": "\"ZSet 成员不能为空\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 127,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Score 必须是有效数字",
+    "raw": "\"Score 必须是有效数字\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 136,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Stream 字段不能为空",
+    "raw": "\"Stream 字段不能为空\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 150,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "List 至少需要一个元素",
+    "raw": "\"List 至少需要一个元素\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 150,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Set 至少需要一个成员",
+    "raw": "\"Set 至少需要一个成员\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 155,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "一次最多写入 500 个元素，请分批创建",
+    "raw": "\"一次最多写入 500 个元素，请分批创建\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 162,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未知的 Key 类型",
+    "raw": "\"未知的 Key 类型\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 178,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 必须是大于 0 的整数秒数，或留空/0 表示永不过期",
+    "raw": "\"TTL 必须是大于 0 的整数秒数，或留空/0 表示永不过期\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml.cs",
+    "line": 184,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 过大（最多 10 年）",
+    "raw": "\"TTL 过大（最多 10 年）\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TextInputDialog.xaml.cs",
+    "line": 17,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "确定",
+    "raw": "\"确定\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TextInputDialog.xaml.cs",
+    "line": 36,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "内容不能为空",
+    "raw": "\"内容不能为空\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 14,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "永不过期",
+    "raw": "\"永不过期\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 15,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "60 秒",
+    "raw": "\"60 秒\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 16,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "5 分钟",
+    "raw": "\"5 分钟\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 17,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "1 小时",
+    "raw": "\"1 小时\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 18,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "1 天",
+    "raw": "\"1 天\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 19,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "7 天",
+    "raw": "\"7 天\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 20,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "自定义…",
+    "raw": "\"自定义…\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 26,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key：{0}    当前 TTL：{1}",
+    "raw": "\"Key：{0}    当前 TTL：{1}\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 64,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请选择过期时间",
+    "raw": "\"请选择过期时间\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 86,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请输入大于 0 的整数秒数",
+    "raw": "\"请输入大于 0 的整数秒数\""
+  },
+  {
+    "file": "WinRedisClient.App/Dialogs/TtlDialog.xaml.cs",
+    "line": 93,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 过大（最多 10 年）",
+    "raw": "\"TTL 过大（最多 10 年）\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 51,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "初始化失败：",
+    "raw": "\"初始化失败：\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 89,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新的界面语言已保存。\\n重启 WinRedis 后生效，是否现在重启？",
+    "raw": "\"新的界面语言已保存。\\n重启 WinRedis 后生效，是否现在重启？\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 90,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "界面语言",
+    "raw": "\"界面语言\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 250,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "设置分组…",
+    "raw": "\"设置分组…\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 255,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "设置分组",
+    "raw": "\"设置分组\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 256,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "输入分组名，相同名称的连接会归入同一组；留空请使用“移出分组”。",
+    "raw": "\"输入分组名，相同名称的连接会归入同一组；留空请使用“移出分组”。\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 258,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "保存",
+    "raw": "\"保存\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 281,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新建分组…",
+    "raw": "\"新建分组…\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 285,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "移动到新分组",
+    "raw": "\"移动到新分组\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 285,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "输入新分组名，连接将移动到该分组。",
+    "raw": "\"输入新分组名，连接将移动到该分组。\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 285,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "移动",
+    "raw": "\"移动\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 295,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "移出分组",
+    "raw": "\"移出分组\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 323,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 333,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "重命名 Key",
+    "raw": "\"重命名 Key\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 333,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "输入 {0} 的新名称；目标已存在时操作会被拒绝。",
+    "raw": "\"输入 {0} 的新名称；目标已存在时操作会被拒绝。\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 334,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "重命名",
+    "raw": "\"重命名\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 354,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已复制到剪贴板",
+    "raw": "\"已复制到剪贴板\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 358,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "复制失败：",
+    "raw": "\"复制失败：\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 367,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "CSV 文件 (*.csv)|*.csv|所有文件 (*.*)|*.*",
+    "raw": "\"CSV 文件 (*.csv)|*.csv|所有文件 (*.*)|*.*\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 368,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "JSON 文件 (*.json)|*.json|所有文件 (*.*)|*.*",
+    "raw": "\"JSON 文件 (*.json)|*.json|所有文件 (*.*)|*.*\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 369,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "文本文件 (*.txt)|*.txt|所有文件 (*.*)|*.*",
+    "raw": "\"文本文件 (*.txt)|*.txt|所有文件 (*.*)|*.*\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 370,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "所有文件 (*.*)|*.*",
+    "raw": "\"所有文件 (*.*)|*.*\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 387,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已导出：",
+    "raw": "\"已导出：\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 391,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "导出失败：",
+    "raw": "\"导出失败：\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 401,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地数据目录尚未初始化",
+    "raw": "\"本地数据目录尚未初始化\""
+  },
+  {
+    "file": "WinRedisClient.App/MainWindow.xaml.cs",
+    "line": 414,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "打开数据目录失败：",
+    "raw": "\"打开数据目录失败：\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/CommandLineParser.cs",
+    "line": 76,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "引号未闭合",
+    "raw": "\"引号未闭合\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 57,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "读取失败：{0}",
+    "raw": "\"读取失败：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 58,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请刷新后重试",
+    "raw": "\"请刷新后重试\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 65,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "左侧类型：{0}",
+    "raw": "\"左侧类型：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 66,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "右侧类型：{0}",
+    "raw": "\"右侧类型：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 67,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "类型不同，未进行内容比较",
+    "raw": "\"类型不同，未进行内容比较\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 70,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "类型不同（{0} / {1}），未进行内容比较",
+    "raw": "\"类型不同（{0} / {1}），未进行内容比较\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 80,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "不支持比较的类型：{0}",
+    "raw": "\"不支持比较的类型：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 81,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前类型暂不支持内容比较",
+    "raw": "\"当前类型暂不支持内容比较\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 92,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "内容一致（对比内容已按大小限制截断）",
+    "raw": "\"内容一致（对比内容已按大小限制截断）\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 92,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "内容一致，无差异",
+    "raw": "\"内容一致，无差异\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 142,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "（内容已截断，仅比较前 1500 行）",
+    "raw": "\"（内容已截断，仅比较前 1500 行）\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 144,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新增 {0} 行，删除 {1} 行{2}",
+    "raw": "\"新增 {0} 行，删除 {1} 行{2}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 182,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} · 左：{1} · 右：{2}",
+    "raw": "\"{0} · 左：{1} · 右：{2}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 198,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "（内容受读取上限影响，结果可能不完整）",
+    "raw": "\"（内容受读取上限影响，结果可能不完整）\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 201,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "内容一致 · 共 {0} 个元素{1}",
+    "raw": "\"内容一致 · 共 {0} 个元素{1}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 202,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新增 {0} · 删除 {1} · 修改 {2}{3}",
+    "raw": "\"新增 {0} · 删除 {1} · 修改 {2}{3}\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/KeyDiffEngine.cs",
+    "line": 205,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "两侧均为空",
+    "raw": "\"两侧均为空\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TextValueDecoder.cs",
+    "line": 84,
+    "interpolated": false,
+    "verbatim": false,
+    "text": " …（共 {0:N0} 字节）",
+    "raw": "\" …（共 {0:N0} 字节）\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 10,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "永不过期",
+    "raw": "\"永不过期\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 12,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已过期",
+    "raw": "\"已过期\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 18,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0}天 {1}小时",
+    "raw": "\"{0}天 {1}小时\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 18,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0}天",
+    "raw": "\"{0}天\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 25,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0}小时 {1}分钟",
+    "raw": "\"{0}小时 {1}分钟\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 25,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0}小时",
+    "raw": "\"{0}小时\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 32,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0}分钟 {1}秒",
+    "raw": "\"{0}分钟 {1}秒\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 32,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0}分钟",
+    "raw": "\"{0}分钟\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 35,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0}秒",
+    "raw": "\"{0}秒\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 40,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "永不过期",
+    "raw": "\"永不过期\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 52,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请输入 TTL 秒数，或选择永不过期",
+    "raw": "\"请输入 TTL 秒数，或选择永不过期\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 58,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 必须是整数秒",
+    "raw": "\"TTL 必须是整数秒\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 70,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 必须大于 0；清除过期时间请选择“永不过期”",
+    "raw": "\"TTL 必须大于 0；清除过期时间请选择“永不过期”\""
+  },
+  {
+    "file": "WinRedisClient.Core/Services/TtlFormatter.cs",
+    "line": 76,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 超出合理范围（最大 10 年）",
+    "raw": "\"TTL 超出合理范围（最大 10 年）\""
+  },
+  {
+    "file": "WinRedisClient.Infrastructure/Dpapi.cs",
+    "line": 16,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "待加密内容不能为空",
+    "raw": "\"待加密内容不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Infrastructure/Dpapi.cs",
+    "line": 60,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "DPAPI {0}失败，错误码 {1}",
+    "raw": "\"DPAPI {0}失败，错误码 {1}\""
+  },
+  {
+    "file": "WinRedisClient.Infrastructure/Dpapi.cs",
+    "line": 60,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "加密",
+    "raw": "\"加密\""
+  },
+  {
+    "file": "WinRedisClient.Infrastructure/Dpapi.cs",
+    "line": 60,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "解密",
+    "raw": "\"解密\""
+  },
+  {
+    "file": "WinRedisClient.Infrastructure/JsonConnectionStore.cs",
+    "line": 88,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接配置文件无法解析，已备份到 {0}",
+    "raw": "\"连接配置文件无法解析，已备份到 {0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/Support/UiText.cs",
+    "line": 74,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "… 共 {0:N0} bytes，仅显示前 {1:N0} bytes",
+    "raw": "\"… 共 {0:N0} bytes，仅显示前 {1:N0} bytes\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/Support/UiText.cs",
+    "line": 103,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} 秒",
+    "raw": "\"{0} 秒\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/Support/UiText.cs",
+    "line": 104,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} 分钟",
+    "raw": "\"{0} 分钟\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/Support/UiText.cs",
+    "line": 105,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} 小时 {1} 分钟",
+    "raw": "\"{0} 小时 {1} 分钟\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/Support/UiText.cs",
+    "line": 106,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} 天 {1} 小时",
+    "raw": "\"{0} 天 {1} 小时\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 34,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "大 Key",
+    "raw": "\"大 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 52,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未分析",
+    "raw": "\"尚未分析\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 58,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 82,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 96,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 104,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "点击“开始分析”扫描当前 DB",
+    "raw": "\"点击“开始分析”扫描当前 DB\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 116,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 137,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在扫描…",
+    "raw": "\"正在扫描…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 163,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已扫描 {0:N0} / 上限 {1:N0} · 候选 {2:N0}",
+    "raw": "\"已扫描 {0:N0} / 上限 {1:N0} · 候选 {2:N0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 164,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在扫描…",
+    "raw": "\"正在扫描…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 180,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未发现任何 Key",
+    "raw": "\"未发现任何 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 182,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "扫描达到上限 {0:N0}，以下为已采样结果",
+    "raw": "\"扫描达到上限 {0:N0}，以下为已采样结果\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 184,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "扫描完成，共 {0:N0} 个 Key",
+    "raw": "\"扫描完成，共 {0:N0} 个 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 185,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已扫描 {0:N0} 个 Key",
+    "raw": "\"已扫描 {0:N0} 个 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 186,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "候选 {0:N0} 个 · 显示 {1:N0} 个",
+    "raw": "\"候选 {0:N0} 个 · 显示 {1:N0} 个\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 190,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "分析已取消",
+    "raw": "\"分析已取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 191,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已扫描 {0:N0} 个 Key",
+    "raw": "\"已扫描 {0:N0} 个 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 195,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "分析失败：",
+    "raw": "\"分析失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 196,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "分析失败",
+    "raw": "\"分析失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 210,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在取消…",
+    "raw": "\"正在取消…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 218,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 300,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 312,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 327,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 335,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "仅预览前 {0} / 共 {1}",
+    "raw": "\"仅预览前 {0} / 共 {1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 340,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "二进制内容，建议在数据浏览中打开",
+    "raw": "\"二进制内容，建议在数据浏览中打开\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 358,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已显示 {0:N0} 项",
+    "raw": "\"已显示 {0:N0} 项\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 359,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "前 {0:N0} / 共 {1:N0} 项",
+    "raw": "\"前 {0:N0} / 共 {1:N0} 项\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 368,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "预览失败：",
+    "raw": "\"预览失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 401,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "点击“开始分析”扫描当前 DB",
+    "raw": "\"点击“开始分析”扫描当前 DB\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 401,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/BigKeyViewModel.cs",
+    "line": 410,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 28,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 29,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L0 · 只读",
+    "raw": "\"L0 · 只读\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 31,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "就绪",
+    "raw": "\"就绪\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 43,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 ❯",
+    "raw": "\"未连接 ❯\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 47,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "WinRedisClient 命令终端",
+    "raw": "\"WinRedisClient 命令终端\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 48,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接 Redis 后可直接执行命令。支持引号与转义，例如：SET greeting \\\"hello world\\\"",
+    "raw": "\"连接 Redis 后可直接执行命令。支持引号与转义，例如：SET greeting \\\"hello world\\\"\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 49,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L2/L3 及生产环境写操作会在执行前要求确认；输入 clear / cls 可清空屏幕。",
+    "raw": "\"L2/L3 及生产环境写操作会在执行前要求确认；输入 clear / cls 可清空屏幕。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 58,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 62,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "就绪",
+    "raw": "\"就绪\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 62,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接：请先在左侧连接 Redis",
+    "raw": "\"未连接：请先在左侧连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 113,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis，请先在左侧建立连接。",
+    "raw": "\"未连接 Redis，请先在左侧建立连接。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 114,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 125,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令解析失败：",
+    "raw": "\"命令解析失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 139,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "只读连接：命令 {0} 属于写操作，已被阻止。",
+    "raw": "\"只读连接：命令 {0} 属于写操作，已被阻止。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 141,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已阻止：只读模式",
+    "raw": "\"已阻止：只读模式\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 151,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L3 高危",
+    "raw": "\"L3 高危\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 152,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L2 批量/脚本",
+    "raw": "\"L2 批量/脚本\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 153,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L1 写操作",
+    "raw": "\"L1 写操作\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 156,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前连接为生产环境：{0} · DB{1}\\\\n",
+    "raw": "\"当前连接为生产环境：{0} · DB{1}\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 157,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令被分类为 {0}：\\\\n{1}\\\\n\\\\n",
+    "raw": "\"命令被分类为 {0}：\\\\n{1}\\\\n\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 158,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该命令可能修改大量数据或影响实例运行，请确认后执行。",
+    "raw": "\"该命令可能修改大量数据或影响实例运行，请确认后执行。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 159,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令被分类为 {0}：\\\\n{1}\\\\n\\\\n确认执行？",
+    "raw": "\"命令被分类为 {0}：\\\\n{1}\\\\n\\\\n确认执行？\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 163,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行命令确认",
+    "raw": "\"执行命令确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 165,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行命令",
+    "raw": "\"执行命令\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 166,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 176,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消执行：",
+    "raw": "\"已取消执行：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 177,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消",
+    "raw": "\"已取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 184,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行中…",
+    "raw": "\"执行中…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 199,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行成功 · {0}",
+    "raw": "\"执行成功 · {0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 204,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "结果未知：",
+    "raw": "\"结果未知：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 205,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写命令可能已在服务端生效。请先刷新数据确认，再决定是否重试。",
+    "raw": "\"写命令可能已在服务端生效。请先刷新数据确认，再决定是否重试。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 206,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "结果未知 · 请刷新确认",
+    "raw": "\"结果未知 · 请刷新确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 209,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消",
+    "raw": "\"已取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 210,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消",
+    "raw": "\"已取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 213,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "错误{0}：{1}",
+    "raw": "\"错误{0}：{1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 213,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行失败",
+    "raw": "\"执行失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 215,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行失败",
+    "raw": "\"执行失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 221,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行异常：",
+    "raw": "\"执行异常：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 222,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行异常",
+    "raw": "\"执行异常\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 265,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已清空输出",
+    "raw": "\"已清空输出\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 292,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令历史已清空",
+    "raw": "\"命令历史已清空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 296,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "清空历史失败：",
+    "raw": "\"清空历史失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 311,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L0 · 只读",
+    "raw": "\"L0 · 只读\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 318,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地命令",
+    "raw": "\"本地命令\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 331,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L0 · 只读",
+    "raw": "\"L0 · 只读\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 332,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L1 · 单项写入",
+    "raw": "\"L1 · 单项写入\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 333,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L2 · 批量/脚本",
+    "raw": "\"L2 · 批量/脚本\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 334,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "L3 · 高危",
+    "raw": "\"L3 · 高危\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/CliViewModel.cs",
+    "line": 339,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "解析错误",
+    "raw": "\"解析错误\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 39,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "密码",
+    "raw": "\"密码\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 52,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未测试连接，可先验证再保存",
+    "raw": "\"尚未测试连接，可先验证再保存\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 56,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "密码",
+    "raw": "\"密码\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 56,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "私钥文件",
+    "raw": "\"私钥文件\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 63,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "开发",
+    "raw": "\"开发\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 64,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "测试",
+    "raw": "\"测试\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 65,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "预发",
+    "raw": "\"预发\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 66,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产",
+    "raw": "\"生产\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 67,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "自定义",
+    "raw": "\"自定义\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 79,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新建连接",
+    "raw": "\"新建连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 80,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地 Redis",
+    "raw": "\"本地 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 87,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "编辑连接",
+    "raw": "\"编辑连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 107,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "私钥文件",
+    "raw": "\"私钥文件\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 107,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "密码",
+    "raw": "\"密码\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 121,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前版本支持 Standalone 连接（可启用 TLS 或 SSH 隧道）",
+    "raw": "\"当前版本支持 Standalone 连接（可启用 TLS 或 SSH 隧道）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 128,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "私钥文件",
+    "raw": "\"私钥文件\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 139,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接名称不能为空",
+    "raw": "\"连接名称不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 140,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接名称最多 60 个字符",
+    "raw": "\"连接名称最多 60 个字符\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 141,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "分组名最多 40 个字符",
+    "raw": "\"分组名最多 40 个字符\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 142,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Host 不能为空",
+    "raw": "\"Host 不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 143,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "端口必须在 1–65535 之间",
+    "raw": "\"端口必须在 1–65535 之间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 145,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "自定义环境需要填写显示名称",
+    "raw": "\"自定义环境需要填写显示名称\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 146,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接超时必须在 1–120 秒之间",
+    "raw": "\"连接超时必须在 1–120 秒之间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 147,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令超时必须在 1–600 秒之间",
+    "raw": "\"命令超时必须在 1–600 秒之间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 150,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "启用 SSH 隧道后，SSH Host 不能为空",
+    "raw": "\"启用 SSH 隧道后，SSH Host 不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 151,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 端口必须在 1–65535 之间",
+    "raw": "\"SSH 端口必须在 1–65535 之间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 152,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "启用 SSH 隧道后，SSH 用户名不能为空",
+    "raw": "\"启用 SSH 隧道后，SSH 用户名不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 157,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 私钥认证需要选择私钥文件",
+    "raw": "\"SSH 私钥认证需要选择私钥文件\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 159,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 私钥文件不存在：{0}",
+    "raw": "\"SSH 私钥文件不存在：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 163,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 密码认证需要输入密码或已保存的密码",
+    "raw": "\"SSH 密码认证需要输入密码或已保存的密码\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 251,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接测试服务未初始化",
+    "raw": "\"连接测试服务未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 257,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在连接…",
+    "raw": "\"正在连接…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 266,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接失败",
+    "raw": "\"连接失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionEditorViewModel.cs",
+    "line": 271,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "测试失败：",
+    "raw": "\"测试失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionGroupViewModel.cs",
+    "line": 21,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未分组",
+    "raw": "\"未分组\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionGroupViewModel.cs",
+    "line": 52,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "分组 {0}",
+    "raw": "\"分组 {0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 54,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产",
+    "raw": "\"生产\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 55,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "预发",
+    "raw": "\"预发\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 56,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "测试",
+    "raw": "\"测试\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 57,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "开发",
+    "raw": "\"开发\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 58,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "自定义",
+    "raw": "\"自定义\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 63,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产环境",
+    "raw": "\"生产环境\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 77,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已连接",
+    "raw": "\"已连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 78,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接中",
+    "raw": "\"连接中\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 79,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接失败",
+    "raw": "\"连接失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 80,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 83,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} · 只读",
+    "raw": "\"{0} · 只读\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 85,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未分组",
+    "raw": "\"未分组\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionItemViewModel.cs",
+    "line": 88,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "警告色：{0}",
+    "raw": "\"警告色：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 13,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产",
+    "raw": "\"生产\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 13,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "预发",
+    "raw": "\"预发\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 13,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "测试",
+    "raw": "\"测试\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 13,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "开发",
+    "raw": "\"开发\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 47,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地连接存储未初始化",
+    "raw": "\"本地连接存储未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 67,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "读取连接配置失败：",
+    "raw": "\"读取连接配置失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 81,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地连接存储未初始化",
+    "raw": "\"本地连接存储未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 109,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "保存连接失败：",
+    "raw": "\"保存连接失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ConnectionListViewModel.cs",
+    "line": 134,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除连接配置失败：",
+    "raw": "\"删除连接配置失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 98,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "从左侧选择一个 Key",
+    "raw": "\"从左侧选择一个 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 132,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新增元素",
+    "raw": "\"新增元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 140,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段",
+    "raw": "\"字段\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 141,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "值",
+    "raw": "\"值\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 142,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新增",
+    "raw": "\"新增\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 164,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "降序 ↓",
+    "raw": "\"降序 ↓\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 164,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "升序 ↑",
+    "raw": "\"升序 ↑\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 218,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在读取…",
+    "raw": "\"正在读取…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 221,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在加载…",
+    "raw": "\"正在加载…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 232,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 255,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "加载失败",
+    "raw": "\"加载失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 256,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "读取失败：",
+    "raw": "\"读取失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 277,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "放弃未保存的修改？",
+    "raw": "\"放弃未保存的修改？\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 278,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”的编辑器中存在未保存的修改。重新加载将丢弃这些修改。",
+    "raw": "\"Key“{0}”的编辑器中存在未保存的修改。重新加载将丢弃这些修改。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 279,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "放弃并重新加载",
+    "raw": "\"放弃并重新加载\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 280,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "继续编辑",
+    "raw": "\"继续编辑\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 300,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "从左侧选择一个 Key",
+    "raw": "\"从左侧选择一个 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 356,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新增字段",
+    "raw": "\"新增字段\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 357,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "追加元素",
+    "raw": "\"追加元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 358,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "添加成员",
+    "raw": "\"添加成员\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 359,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "添加成员",
+    "raw": "\"添加成员\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 360,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "追加消息",
+    "raw": "\"追加消息\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 361,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新增",
+    "raw": "\"新增\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 380,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 406,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "前 {0} / 共 {1}（{2}，已截断只读）",
+    "raw": "\"前 {0} / 共 {1}（{2}，已截断只读）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 407,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} · {1} 文本",
+    "raw": "\"{0} · {1} 文本\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 412,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "二进制",
+    "raw": "\"二进制\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 416,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "二进制 · 前 {0} / 共 {1}",
+    "raw": "\"二进制 · 前 {0} / 共 {1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 417,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "二进制 · {0} · 仅预览",
+    "raw": "\"二进制 · {0} · 仅预览\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 422,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "JSON 已自动格式化",
+    "raw": "\"JSON 已自动格式化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 468,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "集合为空",
+    "raw": "\"集合为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 469,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已显示 {0:N0} / 共 {1:N0} 项",
+    "raw": "\"已显示 {0:N0} / 共 {1:N0} 项\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 478,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "加载元素失败：",
+    "raw": "\"加载元素失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 549,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "只读连接，无法保存",
+    "raw": "\"只读连接，无法保存\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 557,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产环境写入确认",
+    "raw": "\"生产环境写入确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 558,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "即将覆盖生产环境连接“{0}” DB{1} 中的 Key：\\\\n{2}\\\\n\\\\n",
+    "raw": "\"即将覆盖生产环境连接“{0}” DB{1} 中的 Key：\\\\n{2}\\\\n\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 559,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "原值将被替换（TTL 保持不变）。此操作不可自动撤销。",
+    "raw": "\"原值将被替换（TTL 保持不变）。此操作不可自动撤销。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 560,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "确认写入",
+    "raw": "\"确认写入\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 561,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 567,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消保存",
+    "raw": "\"已取消保存\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 573,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在保存…",
+    "raw": "\"正在保存…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 585,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已保存 · {0} · TTL 已保留",
+    "raw": "\"已保存 · {0} · TTL 已保留\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 588,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已保存 Key“{0}”",
+    "raw": "\"已保存 Key“{0}”\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 598,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "保存失败：",
+    "raw": "\"保存失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 616,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已还原为最近一次读取的内容",
+    "raw": "\"已还原为最近一次读取的内容\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 629,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "JSON 已格式化",
+    "raw": "\"JSON 已格式化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 636,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "JSON 无需格式化",
+    "raw": "\"JSON 无需格式化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 640,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "JSON 解析失败：",
+    "raw": "\"JSON 解析失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 690,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "二进制内容不参与文本编辑",
+    "raw": "\"二进制内容不参与文本编辑\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 691,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0:N0} 字符 · {1}（UTF-8）",
+    "raw": "\"{0:N0} 字符 · {1}（UTF-8）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 733,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "编辑元素",
+    "raw": "\"编辑元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 754,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员",
+    "raw": "\"成员\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 754,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员",
+    "raw": "\"成员\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 754,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段",
+    "raw": "\"字段\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 754,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "索引",
+    "raw": "\"索引\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 754,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段",
+    "raw": "\"字段\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 755,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "元素值",
+    "raw": "\"元素值\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 755,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "值",
+    "raw": "\"值\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 774,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "覆盖该元素",
+    "raw": "\"覆盖该元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 774,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写入新元素",
+    "raw": "\"写入新元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 796,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写入成功",
+    "raw": "\"写入成功\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 801,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写入失败：",
+    "raw": "\"写入失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 814,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段名不能为空",
+    "raw": "\"字段名不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 815,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "值不能为空（允许空字符串）",
+    "raw": "\"值不能为空（允许空字符串）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 819,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请选择要编辑的元素",
+    "raw": "\"请选择要编辑的元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 820,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "元素值不能为空",
+    "raw": "\"元素值不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 824,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员不能为空",
+    "raw": "\"成员不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 825,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员不能为空",
+    "raw": "\"成员不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 829,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员不能为空",
+    "raw": "\"成员不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 832,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Score 必须是有效数字",
+    "raw": "\"Score 必须是有效数字\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 853,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前类型不支持新增元素",
+    "raw": "\"当前类型不支持新增元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 860,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未选择元素",
+    "raw": "\"未选择元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 882,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "列表索引无效，请刷新后重试",
+    "raw": "\"列表索引无效，请刷新后重试\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 908,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Stream 消息不支持编辑",
+    "raw": "\"Stream 消息不支持编辑\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 918,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段“{0}”",
+    "raw": "\"字段“{0}”\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 919,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "索引 {0} 处的元素",
+    "raw": "\"索引 {0} 处的元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 920,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员“{0}”",
+    "raw": "\"成员“{0}”\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 921,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "成员“{0}”",
+    "raw": "\"成员“{0}”\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 922,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "消息“{0}”",
+    "raw": "\"消息“{0}”\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 926,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除元素确认",
+    "raw": "\"删除元素确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 927,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "将从 Key“{0}”中删除{1}。\\\\n该操作立即生效，且不可自动撤销。",
+    "raw": "\"将从 Key“{0}”中删除{1}。\\\\n该操作立即生效，且不可自动撤销。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 928,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除元素",
+    "raw": "\"删除元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 929,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 944,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "列表索引无效",
+    "raw": "\"列表索引无效\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 951,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前类型不支持删除元素",
+    "raw": "\"当前类型不支持删除元素\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 963,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "元素已删除",
+    "raw": "\"元素已删除\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 968,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除失败：",
+    "raw": "\"删除失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 988,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} · 已显示 {1:N0} 项",
+    "raw": "\"{0} · 已显示 {1:N0} 项\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1011,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "前 {0} / 共 {1}（已截断，只读预览）",
+    "raw": "\"前 {0} / 共 {1}（已截断，只读预览）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1031,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前连接",
+    "raw": "\"当前连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1034,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产环境写入确认",
+    "raw": "\"生产环境写入确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1034,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写操作确认",
+    "raw": "\"写操作确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1035,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "即将对 {0} {1}。\\\\n",
+    "raw": "\"即将对 {0} {1}。\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1036,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产环境操作不可自动撤销。",
+    "raw": "\"生产环境操作不可自动撤销。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1036,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该操作立即生效。",
+    "raw": "\"该操作立即生效。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1037,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "确认写入",
+    "raw": "\"确认写入\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1038,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1062,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1068,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "只读连接，写操作已被阻止",
+    "raw": "\"只读连接，写操作已被阻止\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1069,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行被安全策略阻止：需要确认",
+    "raw": "\"执行被安全策略阻止：需要确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1070,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 已不存在或已过期",
+    "raw": "\"Key 已不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1071,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "索引已失效，列表可能已被其他客户端修改",
+    "raw": "\"索引已失效，列表可能已被其他客户端修改\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1072,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "目标已存在",
+    "raw": "\"目标已存在\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1073,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写入结果未知，请刷新确认后重试",
+    "raw": "\"写入结果未知，请刷新确认后重试\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DetailPanelViewModel.cs",
+    "line": 1074,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行失败：",
+    "raw": "\"执行失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 28,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "选择连接与 Key 后开始比较",
+    "raw": "\"选择连接与 Key 后开始比较\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 29,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未比较",
+    "raw": "\"尚未比较\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 73,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "读取连接配置失败：",
+    "raw": "\"读取连接配置失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 100,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未比较",
+    "raw": "\"尚未比较\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 107,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "选择连接与 Key 后开始比较",
+    "raw": "\"选择连接与 Key 后开始比较\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 117,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请选择左右两侧连接",
+    "raw": "\"请选择左右两侧连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 125,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请填写左右两侧的 Key 名称",
+    "raw": "\"请填写左右两侧的 Key 名称\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 132,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Redis 会话工厂未初始化",
+    "raw": "\"Redis 会话工厂未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 138,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在建立两个独立会话…",
+    "raw": "\"正在建立两个独立会话…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 148,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在连接左侧…",
+    "raw": "\"正在连接左侧…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 152,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在连接右侧…",
+    "raw": "\"正在连接右侧…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 156,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在读取 Key 内容…",
+    "raw": "\"正在读取 Key 内容…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 187,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "比较完成 · +{0} −{1} ~{2}",
+    "raw": "\"比较完成 · +{0} −{1} ~{2}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 188,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "比较完成 · 内容一致",
+    "raw": "\"比较完成 · 内容一致\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 192,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "比较失败：",
+    "raw": "\"比较失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 194,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "比较失败",
+    "raw": "\"比较失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 215,
+    "interpolated": false,
+    "verbatim": false,
+    "text": " · 已截断",
+    "raw": "\" · 已截断\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 266,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "WinRedisClient Key 对比",
+    "raw": "\"WinRedisClient Key 对比\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 267,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "时间：{0}",
+    "raw": "\"时间：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 268,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "左侧：",
+    "raw": "\"左侧：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 269,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "右侧：",
+    "raw": "\"右侧：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/DiffViewModel.cs",
+    "line": 271,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新增 {0} · 删除 {1} · 修改 {2}",
+    "raw": "\"新增 {0} · 删除 {1} · 修改 {2}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/Events.cs",
+    "line": 15,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "确认",
+    "raw": "\"确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/Events.cs",
+    "line": 16,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 34,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未加载",
+    "raw": "\"尚未加载\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 62,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地历史存储未初始化",
+    "raw": "\"本地历史存储未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 80,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0:N0} 条最近访问 · {1:N0} 条命令历史",
+    "raw": "\"{0:N0} 条最近访问 · {1:N0} 条命令历史\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 84,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "读取本地历史失败：",
+    "raw": "\"读取本地历史失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 85,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "加载失败",
+    "raw": "\"加载失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 98,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "最近访问记录：开启",
+    "raw": "\"最近访问记录：开启\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 98,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "最近访问记录：已关闭",
+    "raw": "\"最近访问记录：已关闭\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 99,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令历史记录：开启",
+    "raw": "\"命令历史记录：开启\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 99,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令历史记录：已关闭",
+    "raw": "\"命令历史记录：已关闭\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 142,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已移除最近访问：{0}",
+    "raw": "\"已移除最近访问：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 146,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "移除失败：",
+    "raw": "\"移除失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 159,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已移除一条命令历史",
+    "raw": "\"已移除一条命令历史\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 163,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "移除失败：",
+    "raw": "\"移除失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 176,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "最近访问已清空",
+    "raw": "\"最近访问已清空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 177,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "最近访问已清空",
+    "raw": "\"最近访问已清空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 181,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "清空失败：",
+    "raw": "\"清空失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 194,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令历史已清空",
+    "raw": "\"命令历史已清空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 195,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令历史已清空",
+    "raw": "\"命令历史已清空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/HistoryViewModel.cs",
+    "line": 199,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "清空失败：",
+    "raw": "\"清空失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 124,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "模糊匹配",
+    "raw": "\"模糊匹配\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 125,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全匹配",
+    "raw": "\"全匹配\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 126,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "数据库模糊",
+    "raw": "\"数据库模糊\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 150,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 151,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 156,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未扫描",
+    "raw": "\"尚未扫描\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 170,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 171,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 171,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "有 TTL",
+    "raw": "\"有 TTL\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 171,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "永不过期",
+    "raw": "\"永不过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 174,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 176,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "0 个 Key",
+    "raw": "\"0 个 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 176,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已加载 {0:N0} 个 Key",
+    "raw": "\"已加载 {0:N0} 个 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 217,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "点击刷新开始浏览",
+    "raw": "\"点击刷新开始浏览\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 217,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 226,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请先连接 Redis",
+    "raw": "\"请先连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 238,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在精确查找…",
+    "raw": "\"正在精确查找…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 239,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在扫描数据库（模糊匹配）…",
+    "raw": "\"正在扫描数据库（模糊匹配）…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 240,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在扫描…",
+    "raw": "\"正在扫描…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 265,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "精确查找失败：",
+    "raw": "\"精确查找失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 266,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "查找失败",
+    "raw": "\"查找失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 281,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "精确匹配：{0}",
+    "raw": "\"精确匹配：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 286,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "没有键名完全匹配的 Key",
+    "raw": "\"没有键名完全匹配的 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 309,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "扫描已取消",
+    "raw": "\"扫描已取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 315,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "扫描失败：",
+    "raw": "\"扫描失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 316,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "扫描失败",
+    "raw": "\"扫描失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 339,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在加载更多…",
+    "raw": "\"正在加载更多…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 355,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "加载已取消",
+    "raw": "\"加载已取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 361,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "加载失败：",
+    "raw": "\"加载失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 381,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消扫描",
+    "raw": "\"已取消扫描\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 411,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "批量加载中… 已加载 {0:N0} 个（目标 {1:N0}）",
+    "raw": "\"批量加载中… 已加载 {0:N0} 个（目标 {1:N0}）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 424,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已批量加载 {0:N0} 个 Key（还有更多，可继续加载）",
+    "raw": "\"已批量加载 {0:N0} 个 Key（还有更多，可继续加载）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 430,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "批量加载已取消",
+    "raw": "\"批量加载已取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 436,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "批量加载失败：",
+    "raw": "\"批量加载失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 504,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已重命名：{0}",
+    "raw": "\"已重命名：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 541,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 已更新：{0}",
+    "raw": "\"TTL 已更新：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 561,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 已存在；请勾选覆盖或修改名称",
+    "raw": "\"Key 已存在；请勾选覆盖或修改名称\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 649,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 651,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 652,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 653,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 678,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 695,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 739,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "全部",
+    "raw": "\"全部\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 740,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "有 TTL",
+    "raw": "\"有 TTL\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 741,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "永不过期",
+    "raw": "\"永不过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 856,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地过滤：显示 {0:N0} / 已加载 {1:N0} 个 Key（仅当前已加载数据）",
+    "raw": "\"本地过滤：显示 {0:N0} / 已加载 {1:N0} 个 Key（仅当前已加载数据）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 861,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "没有找到匹配的 Key",
+    "raw": "\"没有找到匹配的 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 863,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已加载 {0:N0} 个 Key（还有更多，可继续加载）",
+    "raw": "\"已加载 {0:N0} 个 Key（还有更多，可继续加载）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 864,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已加载 {0:N0} 个 Key（扫描完成）",
+    "raw": "\"已加载 {0:N0} 个 Key（扫描完成）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 886,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请先连接 Redis，再启用数据库模糊搜索",
+    "raw": "\"请先连接 Redis，再启用数据库模糊搜索\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 993,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前无法弹出性能确认，已保持本地搜索",
+    "raw": "\"当前无法弹出性能确认，已保持本地搜索\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 999,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "启用数据库模糊搜索？",
+    "raw": "\"启用数据库模糊搜索？\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 1001,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前模糊搜索是纯前端过滤，只搜索已加载的 {0:N0} 个 Key，不会访问 Redis。\\\\n\\\\n",
+    "raw": "\"当前模糊搜索是纯前端过滤，只搜索已加载的 {0:N0} 个 Key，不会访问 Redis。\\\\n\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 1002,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "启用“数据库模糊搜索”后，将使用 SCAN MATCH 扫描 Redis 数据库；",
+    "raw": "\"启用“数据库模糊搜索”后，将使用 SCAN MATCH 扫描 Redis 数据库；\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 1003,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 数量很大时可能耗时较长，并增加服务器压力。\\n\\n是否继续？",
+    "raw": "\"Key 数量很大时可能耗时较长，并增加服务器压力。\\n\\n是否继续？\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 1004,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "启用数据库搜索",
+    "raw": "\"启用数据库搜索\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 1005,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "保持本地搜索",
+    "raw": "\"保持本地搜索\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 1016,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消数据库搜索，继续使用本地过滤",
+    "raw": "\"已取消数据库搜索，继续使用本地过滤\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/KeyBrowserViewModel.cs",
+    "line": 1113,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "(空)",
+    "raw": "\"(空)\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 88,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "数据浏览",
+    "raw": "\"数据浏览\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 88,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SCAN 浏览、查看与编辑 Key",
+    "raw": "\"SCAN 浏览、查看与编辑 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 89,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "实例监控",
+    "raw": "\"实例监控\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 89,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "INFO / SLOWLOG 实时采样",
+    "raw": "\"INFO / SLOWLOG 实时采样\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 90,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令终端",
+    "raw": "\"命令终端\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 90,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行 Redis 命令并查看风险级别",
+    "raw": "\"执行 Redis 命令并查看风险级别\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 91,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 对比",
+    "raw": "\"Key 对比\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 91,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "两个独立会话内容差异比较",
+    "raw": "\"两个独立会话内容差异比较\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 92,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "BigKey 分析",
+    "raw": "\"BigKey 分析\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 92,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "按内存与元素数量识别大 Key",
+    "raw": "\"按内存与元素数量识别大 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 93,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "最近与历史",
+    "raw": "\"最近与历史\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 93,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "最近访问的 Key 与本地命令历史",
+    "raw": "\"最近访问的 Key 与本地命令历史\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 94,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "设置",
+    "raw": "\"设置\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 94,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "主题、浏览、监控、历史与安全",
+    "raw": "\"主题、浏览、监控、历史与安全\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 137,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 · 从左侧选择连接并点击连接",
+    "raw": "\"未连接 · 从左侧选择连接并点击连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 140,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接",
+    "raw": "\"未连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 141,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "从左侧选择连接并点击连接",
+    "raw": "\"从左侧选择连接并点击连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 187,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”不存在或已过期",
+    "raw": "\"Key“{0}”不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 233,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在读取本地连接配置…",
+    "raw": "\"正在读取本地连接配置…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 241,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "初始化失败：",
+    "raw": "\"初始化失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 262,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Redis 服务未初始化",
+    "raw": "\"Redis 服务未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 267,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在连接 {0}…",
+    "raw": "\"正在连接 {0}…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 309,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已连接 {0} · Redis {1} · {2}",
+    "raw": "\"已连接 {0} · Redis {1} · {2}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 319,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接失败：{0}",
+    "raw": "\"连接失败：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 367,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已断开连接",
+    "raw": "\"已断开连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 434,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接已断开",
+    "raw": "\"连接已断开\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 480,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "与 Redis 的连接已断开：",
+    "raw": "\"与 Redis 的连接已断开：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 507,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "无法切换到 DB{0}",
+    "raw": "\"无法切换到 DB{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 542,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已切换到 DB{0}",
+    "raw": "\"已切换到 DB{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 649,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "打开页面失败：",
+    "raw": "\"打开页面失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 697,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 721,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 对比请点击“开始比较”刷新结果",
+    "raw": "\"Key 对比请点击“开始比较”刷新结果\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 743,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前列表中没有 Key“{0}”，请先刷新",
+    "raw": "\"当前列表中没有 Key“{0}”，请先刷新\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 755,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前列表中没有 Key“{0}”，请先刷新",
+    "raw": "\"当前列表中没有 Key“{0}”，请先刷新\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 767,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前列表中没有 Key“{0}”，请先刷新",
+    "raw": "\"当前列表中没有 Key“{0}”，请先刷新\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 781,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除 Key 确认",
+    "raw": "\"删除 Key 确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 782,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "即将删除 Key：\\\\n{0}\\\\n\\\\n",
+    "raw": "\"即将删除 Key：\\\\n{0}\\\\n\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 783,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接：{0} · DB{1}\\\\n",
+    "raw": "\"连接：{0} · DB{1}\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 784,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除立即生效，且不可自动撤销。",
+    "raw": "\"删除立即生效，且不可自动撤销。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 785,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除 Key",
+    "raw": "\"删除 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 786,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 796,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除失败：",
+    "raw": "\"删除失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 803,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已删除 Key：{0}",
+    "raw": "\"已删除 Key：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 811,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新 Key 名称不能为空",
+    "raw": "\"新 Key 名称不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 820,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产环境重命名确认",
+    "raw": "\"生产环境重命名确认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 821,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "即将在生产环境将 Key“{0}”重命名为“{1}”。\\\\n",
+    "raw": "\"即将在生产环境将 Key“{0}”重命名为“{1}”。\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 822,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "若目标已存在，操作会被拒绝。",
+    "raw": "\"若目标已存在，操作会被拒绝。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 823,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "确认重命名",
+    "raw": "\"确认重命名\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 824,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 834,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "重命名失败：",
+    "raw": "\"重命名失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 839,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已重命名为：{0}",
+    "raw": "\"已重命名为：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 849,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "设置 TTL 失败：",
+    "raw": "\"设置 TTL 失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 857,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已清除 {0} 的过期时间",
+    "raw": "\"已清除 {0} 的过期时间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 858,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已设置 TTL：{0}",
+    "raw": "\"已设置 TTL：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 866,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 876,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 名称不能为空",
+    "raw": "\"Key 名称不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 887,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”已经存在，请修改名称或选择覆盖",
+    "raw": "\"Key“{0}”已经存在，请修改名称或选择覆盖\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 895,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "覆盖已存在的 Key",
+    "raw": "\"覆盖已存在的 Key\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 896,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”已经存在于 {1} · DB{2}。\\\\n",
+    "raw": "\"Key“{0}”已经存在于 {1} · DB{2}。\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 897,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "继续将删除原 Key 并创建新内容，原数据不可恢复。",
+    "raw": "\"继续将删除原 Key 并创建新内容，原数据不可恢复。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 898,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "覆盖创建",
+    "raw": "\"覆盖创建\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 899,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 910,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "创建失败：",
+    "raw": "\"创建失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 915,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已创建 {0} Key：{1}",
+    "raw": "\"已创建 {0} Key：{1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 919,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "创建失败：",
+    "raw": "\"创建失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 929,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接配置已保存；重新连接后新配置生效",
+    "raw": "\"连接配置已保存；重新连接后新配置生效\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 931,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已保存连接：{0}",
+    "raw": "\"已保存连接：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 936,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "将删除本地连接配置“{0}”（{1}）。\\\\n",
+    "raw": "\"将删除本地连接配置“{0}”（{1}）。\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 937,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "这不会删除 Redis 服务端的数据。",
+    "raw": "\"这不会删除 Redis 服务端的数据。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 939,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "\\n\\n该连接当前处于已连接状态，删除后将断开连接。",
+    "raw": "\"\\n\\n该连接当前处于已连接状态，删除后将断开连接。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 943,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除连接配置",
+    "raw": "\"删除连接配置\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 945,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "删除连接",
+    "raw": "\"删除连接\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 946,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 956,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已删除连接：{0}",
+    "raw": "\"已删除连接：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 999,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已取消切换，未保存的修改仍在编辑器中；点击原 Key 可继续编辑",
+    "raw": "\"已取消切换，未保存的修改仍在编辑器中；点击原 Key 可继续编辑\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1056,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请先连接 Redis",
+    "raw": "\"请先连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1063,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该记录来自连接“{0}”，请先连接对应实例",
+    "raw": "\"该记录来自连接“{0}”，请先连接对应实例\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1080,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”不存在或已过期",
+    "raw": "\"Key“{0}”不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1093,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "请先连接 Redis",
+    "raw": "\"请先连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1100,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”不存在或已过期",
+    "raw": "\"Key“{0}”不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1139,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "执行失败：",
+    "raw": "\"执行失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1199,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令",
+    "raw": "\"命令\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1218,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "页面",
+    "raw": "\"页面\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1225,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "最近",
+    "raw": "\"最近\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1265,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "存在未保存的修改",
+    "raw": "\"存在未保存的修改\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1266,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”的编辑器中存在未保存的修改。\\\\n",
+    "raw": "\"Key“{0}”的编辑器中存在未保存的修改。\\\\n\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1267,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "继续操作将丢弃这些修改。",
+    "raw": "\"继续操作将丢弃这些修改。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1268,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "丢弃修改并继续",
+    "raw": "\"丢弃修改并继续\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1269,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "返回编辑",
+    "raw": "\"返回编辑\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1285,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "退出 WinRedisClient？",
+    "raw": "\"退出 WinRedisClient？\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1286,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key“{0}”存在未保存的修改，退出将丢失这些修改。",
+    "raw": "\"Key“{0}”存在未保存的修改，退出将丢失这些修改。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1287,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "退出并丢弃修改",
+    "raw": "\"退出并丢弃修改\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1288,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "继续编辑",
+    "raw": "\"继续编辑\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1329,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前连接为只读模式",
+    "raw": "\"当前连接为只读模式\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1330,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "操作被安全策略阻止（需要确认）",
+    "raw": "\"操作被安全策略阻止（需要确认）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1331,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "目标已存在",
+    "raw": "\"目标已存在\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1332,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1333,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1334,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "写入结果未知，请刷新确认后重试",
+    "raw": "\"写入结果未知，请刷新确认后重试\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MainWindowViewModel.cs",
+    "line": 1335,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未知错误",
+    "raw": "\"未知错误\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 48,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "进入监控页后自动采样",
+    "raw": "\"进入监控页后自动采样\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 73,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未读取",
+    "raw": "\"尚未读取\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 87,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "暂停采样",
+    "raw": "\"暂停采样\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 87,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "开始采样",
+    "raw": "\"开始采样\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 97,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 112,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "采样已暂停（离开监控页）",
+    "raw": "\"采样已暂停（离开监控页）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 144,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "采样已暂停",
+    "raw": "\"采样已暂停\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 159,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "未连接 Redis",
+    "raw": "\"未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 166,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在采集 INFO…",
+    "raw": "\"正在采集 INFO…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 186,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "自动采样中 · 每 {0}s",
+    "raw": "\"自动采样中 · 每 {0}s\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 186,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "采样已暂停",
+    "raw": "\"采样已暂停\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 194,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "采集失败：",
+    "raw": "\"采集失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 195,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "采集失败",
+    "raw": "\"采集失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 211,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "峰值 {0} · 上限 {1}",
+    "raw": "\"峰值 {0} · 上限 {1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 212,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "峰值 {0} · 未设置 maxmemory",
+    "raw": "\"峰值 {0} · 未设置 maxmemory\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 217,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "阻塞 {0:N0} · 总连接 {1}",
+    "raw": "\"阻塞 {0:N0} · 总连接 {1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 225,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命中 {0:N0} · 未命中 {1:N0}",
+    "raw": "\"命中 {0:N0} · 未命中 {1:N0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 232,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "入 {0} · 出 {1}",
+    "raw": "\"入 {0} · 出 {1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 240,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "AOF 已开启",
+    "raw": "\"AOF 已开启\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 240,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "AOF 关闭",
+    "raw": "\"AOF 关闭\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 245,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} · 最后 RDB 保存 {1}",
+    "raw": "\"{0} · 最后 RDB 保存 {1}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 374,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SlowLog 为空",
+    "raw": "\"SlowLog 为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 374,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "{0} 条（最近 20 条）",
+    "raw": "\"{0} 条（最近 20 条）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 378,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "读取 SlowLog 失败：",
+    "raw": "\"读取 SlowLog 失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 398,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "自动采样中 · 每 {0}s",
+    "raw": "\"自动采样中 · 每 {0}s\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 422,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接已断开",
+    "raw": "\"连接已断开\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 438,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "采样循环异常：",
+    "raw": "\"采样循环异常：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/MonitorViewModel.cs",
+    "line": 439,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "采样已停止",
+    "raw": "\"采样已停止\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 18,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "标准（100%）",
+    "raw": "\"标准（100%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 30,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "设置保存在本机，不会上传到任何外部服务",
+    "raw": "\"设置保存在本机，不会上传到任何外部服务\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 36,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "中文",
+    "raw": "\"中文\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 39,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "小（90%）",
+    "raw": "\"小（90%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 39,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "标准（100%）",
+    "raw": "\"标准（100%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 39,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "大（115%）",
+    "raw": "\"大（115%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 95,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "设置保存在本机，不会上传到任何外部服务",
+    "raw": "\"设置保存在本机，不会上传到任何外部服务\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 139,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "小（90%）",
+    "raw": "\"小（90%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 140,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "大（115%）",
+    "raw": "\"大（115%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 141,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "标准（100%）",
+    "raw": "\"标准（100%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 146,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "小（90%）",
+    "raw": "\"小（90%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 147,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "大（115%）",
+    "raw": "\"大（115%）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 161,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字体大小已应用并保存到本机",
+    "raw": "\"字体大小已应用并保存到本机\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 166,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字体大小已应用，但保存失败：",
+    "raw": "\"字体大小已应用，但保存失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 167,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字体大小已应用（未持久化）",
+    "raw": "\"字体大小已应用（未持久化）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 181,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "界面语言已保存，重启 WinRedis 后生效",
+    "raw": "\"界面语言已保存，重启 WinRedis 后生效\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 186,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "界面语言保存失败：",
+    "raw": "\"界面语言保存失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 200,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "主题已应用并保存到本机",
+    "raw": "\"主题已应用并保存到本机\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 205,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "主题已应用，但保存失败：",
+    "raw": "\"主题已应用，但保存失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 206,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "主题已应用（未持久化）",
+    "raw": "\"主题已应用（未持久化）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 225,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地设置存储未初始化",
+    "raw": "\"本地设置存储未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 231,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "正在保存…",
+    "raw": "\"正在保存…\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 238,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已保存 · {0}",
+    "raw": "\"已保存 · {0}\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 241,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "设置已保存",
+    "raw": "\"设置已保存\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 245,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "保存失败：",
+    "raw": "\"保存失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 246,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "保存失败",
+    "raw": "\"保存失败\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 259,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "恢复默认设置？",
+    "raw": "\"恢复默认设置？\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 260,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "将把界面、监控与历史设置恢复为默认值。连接配置和本地历史不会被删除。\\n需要点击“保存设置”后才会持久化。",
+    "raw": "\"将把界面、监控与历史设置恢复为默认值。连接配置和本地历史不会被删除。\\n需要点击“保存设置”后才会持久化。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 261,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "恢复默认",
+    "raw": "\"恢复默认\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 262,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 268,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已恢复默认值，点击“保存设置”生效",
+    "raw": "\"已恢复默认值，点击“保存设置”生效\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 269,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已恢复默认设置（尚未保存）",
+    "raw": "\"已恢复默认设置（尚未保存）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 280,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "清空本地历史？",
+    "raw": "\"清空本地历史？\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 281,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "将删除本机保存的最近访问 Key 与命令历史。该操作不可撤销，不会影响 Redis 中的数据。",
+    "raw": "\"将删除本机保存的最近访问 Key 与命令历史。该操作不可撤销，不会影响 Redis 中的数据。\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 282,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "清空历史",
+    "raw": "\"清空历史\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 283,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "取消",
+    "raw": "\"取消\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 292,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地历史已清空",
+    "raw": "\"本地历史已清空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 294,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地历史已清空",
+    "raw": "\"本地历史已清空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 298,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "清空历史失败：",
+    "raw": "\"清空历史失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 313,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "本地连接存储未初始化",
+    "raw": "\"本地连接存储未初始化\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 357,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已导出连接配置（不含密码）",
+    "raw": "\"已导出连接配置（不含密码）\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 361,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "导出连接配置失败：",
+    "raw": "\"导出连接配置失败：\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 368,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 分隔符不能为空",
+    "raw": "\"Key 分隔符不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 370,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 分隔符最多 5 个字符",
+    "raw": "\"Key 分隔符最多 5 个字符\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 372,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "默认数据库必须在 0–15 之间",
+    "raw": "\"默认数据库必须在 0–15 之间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 374,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "监控采样间隔必须在 1–60 秒之间",
+    "raw": "\"监控采样间隔必须在 1–60 秒之间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/SettingsViewModel.cs",
+    "line": 376,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令历史上限必须在 20–2000 条之间",
+    "raw": "\"命令历史上限必须在 20–2000 条之间\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 22,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "浅色",
+    "raw": "\"浅色\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 22,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Light · 清爽冷白 + 品牌紫",
+    "raw": "\"Light · 清爽冷白 + 品牌紫\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 24,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "深色",
+    "raw": "\"深色\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 24,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Dark · 低亮度深色界面",
+    "raw": "\"Dark · 低亮度深色界面\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 26,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "跟随系统",
+    "raw": "\"跟随系统\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 26,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "System · 跟随 Windows 明暗设置",
+    "raw": "\"System · 跟随 Windows 明暗设置\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 28,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "海盐",
+    "raw": "\"海盐\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 28,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Salt · 清冷灰青 + 珊瑚强调",
+    "raw": "\"Salt · 清冷灰青 + 珊瑚强调\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 30,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "奶糖",
+    "raw": "\"奶糖\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 30,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Sugar · 温暖米色 + 琥珀强调",
+    "raw": "\"Sugar · 温暖米色 + 琥珀强调\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 32,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "森林",
+    "raw": "\"森林\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 32,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Forest · 抹茶豆绿 + 森林绿强调",
+    "raw": "\"Forest · 抹茶豆绿 + 森林绿强调\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 34,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "繁花",
+    "raw": "\"繁花\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 34,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Flower · 丁香粉紫 + 紫罗兰强调",
+    "raw": "\"Flower · 丁香粉紫 + 紫罗兰强调\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 36,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "微风",
+    "raw": "\"微风\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/ThemeCatalog.cs",
+    "line": 36,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Wind · 莫兰迪灰 + 岩蓝灰强调",
+    "raw": "\"Wind · 莫兰迪灰 + 岩蓝灰强调\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/WarningColorCatalog.cs",
+    "line": 14,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "无",
+    "raw": "\"无\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/WarningColorCatalog.cs",
+    "line": 15,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "黄色",
+    "raw": "\"黄色\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/WarningColorCatalog.cs",
+    "line": 16,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "橙色",
+    "raw": "\"橙色\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/WarningColorCatalog.cs",
+    "line": 17,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "红色",
+    "raw": "\"红色\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/WarningColorCatalog.cs",
+    "line": 18,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "紫色",
+    "raw": "\"紫色\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/WarningColorCatalog.cs",
+    "line": 19,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "蓝色",
+    "raw": "\"蓝色\""
+  },
+  {
+    "file": "WinRedisClient.Presentation/ViewModels/WarningColorCatalog.cs",
+    "line": 20,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "绿色",
+    "raw": "\"绿色\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 31,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "无法识别 Redis 会话实现",
+    "raw": "\"无法识别 Redis 会话实现\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 52,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接成功（无法读取版本信息）",
+    "raw": "\"连接成功（无法读取版本信息）\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 52,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接成功 · Redis {0}",
+    "raw": "\"连接成功 · Redis {0}\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 76,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "无法连接 Redis：请检查 Host/Port、网络、防火墙或 SSH 隧道配置",
+    "raw": "\"无法连接 Redis：请检查 Host/Port、网络、防火墙或 SSH 隧道配置\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 77,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "连接超时：Redis 未在超时时间内响应",
+    "raw": "\"连接超时：Redis 未在超时时间内响应\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 79,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "认证失败：该实例需要密码",
+    "raw": "\"认证失败：该实例需要密码\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 81,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "认证失败：用户名或密码错误",
+    "raw": "\"认证失败：用户名或密码错误\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 83,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "权限不足：当前用户无权执行该操作",
+    "raw": "\"权限不足：当前用户无权执行该操作\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 85,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "目标实例为只读副本，无法写入",
+    "raw": "\"目标实例为只读副本，无法写入\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 86,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "网络连接失败：目标主机不可达或端口未开放",
+    "raw": "\"网络连接失败：目标主机不可达或端口未开放\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 87,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 认证失败：请检查 SSH 用户名/密码",
+    "raw": "\"SSH 认证失败：请检查 SSH 用户名/密码\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 88,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 连接失败：请检查跳板机配置与网络",
+    "raw": "\"SSH 连接失败：请检查跳板机配置与网络\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 101,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "操作已取消",
+    "raw": "\"操作已取消\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 107,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该实例需要密码认证",
+    "raw": "\"该实例需要密码认证\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 108,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "用户名或密码错误",
+    "raw": "\"用户名或密码错误\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 109,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前用户无权执行该命令",
+    "raw": "\"当前用户无权执行该命令\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 110,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 类型不匹配，请刷新后重试",
+    "raw": "\"Key 类型不匹配，请刷新后重试\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 111,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "目标实例为只读副本",
+    "raw": "\"目标实例为只读副本\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 112,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Redis 内存不足，命令被拒绝",
+    "raw": "\"Redis 内存不足，命令被拒绝\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 113,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Redis 正在加载数据，请稍后重试",
+    "raw": "\"Redis 正在加载数据，请稍后重试\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisConnectionTester.cs",
+    "line": 114,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该 Redis 版本不支持此命令",
+    "raw": "\"该 Redis 版本不支持此命令\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 28,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 38,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "无法识别 Redis 会话实现",
+    "raw": "\"无法识别 Redis 会话实现\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 174,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 300,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不是 String 类型",
+    "raw": "\"Key 不是 String 类型\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 319,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 328,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 331,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 类型已变为 {0}，请刷新",
+    "raw": "\"Key 类型已变为 {0}，请刷新\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 340,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "不支持的类型：{0}",
+    "raw": "\"不支持的类型：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 501,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已过期",
+    "raw": "\"Key 不存在或已过期\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 546,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 550,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "命令不能为空",
+    "raw": "\"命令不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 557,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该命令属于批量/脚本/阻塞命令，需要确认后执行",
+    "raw": "\"该命令属于批量/脚本/阻塞命令，需要确认后执行\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 562,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产环境执行破坏性命令需要额外确认",
+    "raw": "\"生产环境执行破坏性命令需要额外确认\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 586,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "操作已取消",
+    "raw": "\"操作已取消\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 595,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "；写入命令可能已发送，结果未知，请刷新确认后再决定是否重试",
+    "raw": "\"；写入命令可能已发送，结果未知，请刷新确认后再决定是否重试\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 630,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 680,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 730,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 已存在；如需覆盖请明确选择覆盖",
+    "raw": "\"Key 已存在；如需覆盖请明确选择覆盖\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 731,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "不支持创建类型 {0}",
+    "raw": "\"不支持创建类型 {0}\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 732,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "创建 Key 失败",
+    "raw": "\"创建 Key 失败\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 750,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 765,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已被删除",
+    "raw": "\"Key 不存在或已被删除\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 782,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 785,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新 Key 名称与原名相同",
+    "raw": "\"新 Key 名称与原名相同\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 787,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "新 Key 名称不能为空",
+    "raw": "\"新 Key 名称不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 804,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "目标 Key 已存在，未执行重命名",
+    "raw": "\"目标 Key 已存在，未执行重命名\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 805,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "源 Key 不存在",
+    "raw": "\"源 Key 不存在\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 822,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 828,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "TTL 必须大于 0；清除过期时间请选择永不过期",
+    "raw": "\"TTL 必须大于 0；清除过期时间请选择永不过期\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 837,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Key 不存在或已被删除",
+    "raw": "\"Key 不存在或已被删除\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 868,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 895,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "该索引已不存在，列表可能已被其他客户端修改",
+    "raw": "\"该索引已不存在，列表可能已被其他客户端修改\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 911,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "尚未连接 Redis",
+    "raw": "\"尚未连接 Redis\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 914,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "至少需要一个字段",
+    "raw": "\"至少需要一个字段\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 916,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "字段名不能为空",
+    "raw": "\"字段名不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1003,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前连接为只读模式，写操作已被阻止",
+    "raw": "\"当前连接为只读模式，写操作已被阻止\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1008,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "生产环境执行写操作需要额外确认",
+    "raw": "\"生产环境执行写操作需要额外确认\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1024,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "String 需要 1 个初始值",
+    "raw": "\"String 需要 1 个初始值\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1025,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Hash 需要 1 个初始字段与值",
+    "raw": "\"Hash 需要 1 个初始字段与值\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1026,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "List 至少需要 1 个元素",
+    "raw": "\"List 至少需要 1 个元素\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1027,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Set 至少需要 1 个成员",
+    "raw": "\"Set 至少需要 1 个成员\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1028,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "ZSet 需要 1 个成员与 Score",
+    "raw": "\"ZSet 需要 1 个成员与 Score\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1030,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "ZSet Score 必须是数字",
+    "raw": "\"ZSet Score 必须是数字\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1031,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Stream 需要 1 个初始字段与值",
+    "raw": "\"Stream 需要 1 个初始字段与值\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1033,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "不支持的类型：{0}",
+    "raw": "\"不支持的类型：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisService.cs",
+    "line": 1060,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "；写入结果未知，请刷新后确认，勿直接重试",
+    "raw": "\"；写入结果未知，请刷新后确认，勿直接重试\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisSessionFactory.cs",
+    "line": 21,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "当前版本仅支持 Standalone 连接（TLS / SSH 隧道可用）",
+    "raw": "\"当前版本仅支持 Standalone 连接（TLS / SSH 隧道可用）\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisSessionFactory.cs",
+    "line": 24,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Host 不能为空",
+    "raw": "\"Host 不能为空\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisSessionFactory.cs",
+    "line": 27,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "Port 必须在 1-65535 之间",
+    "raw": "\"Port 必须在 1-65535 之间\""
+  },
+  {
+    "file": "WinRedisClient.Redis/RedisSessionFactory.cs",
+    "line": 39,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "已启用 SSH 隧道，但 SSH Host 为空",
+    "raw": "\"已启用 SSH 隧道，但 SSH Host 为空\""
+  },
+  {
+    "file": "WinRedisClient.Transport/SshTunnelService.cs",
+    "line": 28,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 连接失败: {0}:{1}",
+    "raw": "\"SSH 连接失败: {0}:{1}\""
+  },
+  {
+    "file": "WinRedisClient.Transport/SshTunnelService.cs",
+    "line": 36,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 本地端口转发启动失败",
+    "raw": "\"SSH 本地端口转发启动失败\""
+  },
+  {
+    "file": "WinRedisClient.Transport/SshTunnelService.cs",
+    "line": 55,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 私钥文件不能为空，请在连接设置中选择私钥文件",
+    "raw": "\"SSH 私钥文件不能为空，请在连接设置中选择私钥文件\""
+  },
+  {
+    "file": "WinRedisClient.Transport/SshTunnelService.cs",
+    "line": 58,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 私钥文件不存在：{0}",
+    "raw": "\"SSH 私钥文件不存在：{0}\""
+  },
+  {
+    "file": "WinRedisClient.Transport/SshTunnelService.cs",
+    "line": 69,
+    "interpolated": false,
+    "verbatim": false,
+    "text": "SSH 私钥无法读取：{0}。请确认文件格式为 OpenSSH/PEM，口令是否正确。",
+    "raw": "\"SSH 私钥无法读取：{0}。请确认文件格式为 OpenSSH/PEM，口令是否正确。\""
+  }
+]

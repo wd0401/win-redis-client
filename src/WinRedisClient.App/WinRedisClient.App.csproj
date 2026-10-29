@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <!-- 系统托盘图标使用 WinForms NotifyIcon，避免额外依赖 -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>WinRedisClient.App</RootNamespace>
+    <AssemblyName>WinRedisClient</AssemblyName>
+    <ApplicationIcon>Assets\winredis-icon.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Product>WinRedis</Product>
+    <Company>WinRedis Contributors</Company>
+    <Description>WinRedis - a modern, local-first Redis desktop client</Description>
+    <Copyright>Copyright (c) 2026 WinRedis Contributors</Copyright>
+  </PropertyGroup>
+
+  <!-- WinForms 仅为托盘图标引入；移除其隐式 using，避免与 WPF 类型二义 -->
+  <ItemGroup>
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" />
+  </ItemGroup>
+
+  <!-- 品牌资源：窗口图标与产品标识 -->
+  <ItemGroup>
+    <Resource Include="Assets\winredis-icon.png" />
+    <Resource Include="Assets\winredis-icon-128.png" />
+  </ItemGroup>
+
+  <!-- 组合根：接线 Presentation 与各基础设施实现 -->
+  <ItemGroup>
+    <ProjectReference Include="..\WinRedisClient.Presentation\WinRedisClient.Presentation.csproj" />
+    <ProjectReference Include="..\WinRedisClient.Redis\WinRedisClient.Redis.csproj" />
+    <ProjectReference Include="..\WinRedisClient.Transport\WinRedisClient.Transport.csproj" />
+    <ProjectReference Include="..\WinRedisClient.Infrastructure\WinRedisClient.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

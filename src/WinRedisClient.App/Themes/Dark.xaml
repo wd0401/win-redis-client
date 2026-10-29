@@ -1,0 +1,69 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ═══ 暗色主题（与亮色保持同一套键） ═══ -->
+
+    <SolidColorBrush x:Key="PrimaryBrush" Color="#8B85FF" />
+    <SolidColorBrush x:Key="PrimaryHoverBrush" Color="#756EFF" />
+    <SolidColorBrush x:Key="PrimaryLightBrush" Color="#26234A" />
+    <SolidColorBrush x:Key="PrimarySubtleBrush" Color="#322E5C" />
+    <SolidColorBrush x:Key="PrimaryDeepBrush" Color="#625BFF" />
+
+    <SolidColorBrush x:Key="BgAppBrush" Color="#0E1220" />
+    <SolidColorBrush x:Key="BgCardBrush" Color="#171C2B" />
+    <SolidColorBrush x:Key="BgSidebarBrush" Color="#121725" />
+    <SolidColorBrush x:Key="BgSidebarHoverBrush" Color="#1B2133" />
+    <SolidColorBrush x:Key="BgSidebarActiveBrush" Color="#26234A" />
+    <SolidColorBrush x:Key="BgInputBrush" Color="#1B2133" />
+    <SolidColorBrush x:Key="BgTagBrush" Color="#232B40" />
+    <SolidColorBrush x:Key="BgTerminalBrush" Color="#080B13" />
+    <SolidColorBrush x:Key="BgToolbarBrush" Color="#121725" />
+    <SolidColorBrush x:Key="BgStatusBarBrush" Color="#121725" />
+    <SolidColorBrush x:Key="BgOverlayBrush" Color="#B3050810" />
+
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#F1F5F9" />
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#9AA7BD" />
+    <SolidColorBrush x:Key="TextTertiaryBrush" Color="#6B7A93" />
+    <SolidColorBrush x:Key="TextInverseBrush" Color="#0E1220" />
+    <SolidColorBrush x:Key="TextSidebarBrush" Color="#CBD5E1" />
+    <SolidColorBrush x:Key="TextSidebarDimBrush" Color="#6B7A93" />
+
+    <SolidColorBrush x:Key="BorderLightBrush" Color="#26304A" />
+    <SolidColorBrush x:Key="BorderLighterBrush" Color="#1D2539" />
+    <SolidColorBrush x:Key="BorderStrongBrush" Color="#3A4766" />
+    <SolidColorBrush x:Key="BorderFocusBrush" Color="#8B85FF" />
+
+    <SolidColorBrush x:Key="EnvDevBrush" Color="#34D399" />
+    <SolidColorBrush x:Key="EnvTestBrush" Color="#60A5FA" />
+    <SolidColorBrush x:Key="EnvStagingBrush" Color="#FBBF24" />
+    <SolidColorBrush x:Key="EnvProdBrush" Color="#F87171" />
+    <SolidColorBrush x:Key="EnvProdBgBrush" Color="#3A1616" />
+
+    <SolidColorBrush x:Key="ConnectedBrush" Color="#34D399" />
+    <SolidColorBrush x:Key="DisconnectedBrush" Color="#3A4766" />
+    <SolidColorBrush x:Key="SuccessBrush" Color="#34D399" />
+    <SolidColorBrush x:Key="WarningBrush" Color="#FBBF24" />
+    <SolidColorBrush x:Key="WarningLightBrush" Color="#332A12" />
+    <SolidColorBrush x:Key="DangerBrush" Color="#F87171" />
+    <SolidColorBrush x:Key="DangerLightBrush" Color="#3A1616" />
+    <SolidColorBrush x:Key="InfoBrush" Color="#60A5FA" />
+    <SolidColorBrush x:Key="InfoLightBrush" Color="#17233D" />
+
+    <SolidColorBrush x:Key="TypeStringBg" Color="#2E1065" />
+    <SolidColorBrush x:Key="TypeStringFg" Color="#C4B5FD" />
+    <SolidColorBrush x:Key="TypeHashBg" Color="#451A03" />
+    <SolidColorBrush x:Key="TypeHashFg" Color="#FCD34D" />
+    <SolidColorBrush x:Key="TypeListBg" Color="#172554" />
+    <SolidColorBrush x:Key="TypeListFg" Color="#93C5FD" />
+    <SolidColorBrush x:Key="TypeSetBg" Color="#022C22" />
+    <SolidColorBrush x:Key="TypeSetFg" Color="#6EE7B7" />
+    <SolidColorBrush x:Key="TypeZsetBg" Color="#500724" />
+    <SolidColorBrush x:Key="TypeZsetFg" Color="#F9A8D4" />
+    <SolidColorBrush x:Key="TypeStreamBg" Color="#083344" />
+    <SolidColorBrush x:Key="TypeStreamFg" Color="#67E8F9" />
+    <SolidColorBrush x:Key="TypeDefaultBg" Color="#232B40" />
+    <SolidColorBrush x:Key="TypeDefaultFg" Color="#9AA7BD" />
+
+    <SolidColorBrush x:Key="TextOnAccentBrush" Color="#FFFFFF" />
+
+</ResourceDictionary>

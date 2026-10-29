@@ -1,0 +1,296 @@
+<UserControl x:Class="WinRedisClient.App.Views.MonitorPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:WinRedisClient.App.Localization"
+             xmlns:controls="clr-namespace:WinRedisClient.App.Controls"
+             Background="Transparent">
+    <Grid Margin="16,14,16,14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="212" />
+        </Grid.RowDefinitions>
+
+        <!-- 采样控制条 -->
+        <Border Grid.Row="0" Style="{StaticResource Card}" Padding="14,10" Margin="0,0,0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Ellipse>
+                        <Ellipse.Style>
+                            <Style TargetType="Ellipse" BasedOn="{StaticResource StatusDot}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsConnected}" Value="True">
+                                        <Setter Property="Fill" Value="{DynamicResource ConnectedBrush}" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Ellipse.Style>
+                    </Ellipse>
+                    <TextBlock Text="{Binding StatusText}" FontSize="{DynamicResource Fs12}" Margin="8,0,0,0"
+                               Foreground="{DynamicResource TextSecondaryBrush}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding LastUpdatedText, StringFormat={loc:Tr '最近更新 {0}'}}" FontSize="{DynamicResource Fs105}" Margin="12,0,0,0"
+                               Foreground="{DynamicResource TextTertiaryBrush}" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="{loc:Tr '采样间隔'}" FontSize="{DynamicResource Fs11}" Foreground="{DynamicResource TextTertiaryBrush}"
+                               VerticalAlignment="Center" Margin="0,0,6,0" />
+                    <ComboBox Style="{StaticResource ComboModern}" Width="72" Height="30" MinHeight="30" FontSize="{DynamicResource Fs12}"
+                              ItemsSource="{Binding IntervalOptions}" SelectedItem="{Binding IntervalSeconds}"
+                              Margin="0,0,10,0" />
+                    <Button Style="{StaticResource BtnSmall}" Content="{Binding SamplingButtonText}"
+                            Command="{Binding ToggleSamplingCommand}" Margin="0,0,6,0" />
+                    <Button Style="{StaticResource BtnSmallGhost}" Content="{loc:Tr '刷新'}" Command="{Binding RefreshCommand}" Margin="0,0,6,0" />
+                    <Button Style="{StaticResource BtnSmallGhost}" Content="{loc:Tr '读取 SlowLog'}" Command="{Binding RefreshSlowLogCommand}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- 指标卡 -->
+        <Grid Grid.Row="1" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource Card}" Padding="16,13">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Tr '内存使用'}" Style="{StaticResource SectionLabel}" />
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,4,0,0">
+                        <TextBlock Text="{Binding UsedMemoryText}" Style="{StaticResource MetricValue}" />
+                    </StackPanel>
+                    <TextBlock Grid.Row="2" Text="{Binding MemoryDetailText}" Style="{StaticResource TinyText}"
+                               TextTrimming="CharacterEllipsis" Margin="0,4,0,0" ToolTip="{Binding MemoryDetailText}" />
+                    <controls:Sparkline Grid.Row="2" Height="34" VerticalAlignment="Bottom" Margin="0,16,0,0"
+                                        Values="{Binding MemorySeries}" Stroke="{DynamicResource PrimaryBrush}" />
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="2" Style="{StaticResource Card}" Padding="16,13">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Tr '每秒操作'}" Style="{StaticResource SectionLabel}" />
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,4,0,0">
+                        <TextBlock Text="{Binding OpsText}" Style="{StaticResource MetricValue}" />
+                        <TextBlock Text="ops/s" FontSize="{DynamicResource Fs11}" Margin="6,0,0,3" VerticalAlignment="Bottom"
+                                   Foreground="{DynamicResource TextTertiaryBrush}" />
+                    </StackPanel>
+                    <TextBlock Grid.Row="2" Text="{Binding TotalCommandsText, StringFormat={loc:Tr '累计命令 {0}'}}"
+                               Style="{StaticResource TinyText}" Margin="0,4,0,0" />
+                    <controls:Sparkline Grid.Row="2" Height="34" VerticalAlignment="Bottom" Margin="0,16,0,0"
+                                        Values="{Binding OpsSeries}" Stroke="{DynamicResource InfoBrush}" />
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="4" Style="{StaticResource Card}" Padding="16,13">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Tr '客户端连接'}" Style="{StaticResource SectionLabel}" />
+                    <TextBlock Grid.Row="1" Text="{Binding ConnectedClientsText}" Style="{StaticResource MetricValue}"
+                               Margin="0,4,0,0" />
+                    <TextBlock Grid.Row="2" Text="{Binding ClientsDetailText}" Style="{StaticResource TinyText}"
+                               TextTrimming="CharacterEllipsis" Margin="0,4,0,0" />
+                    <controls:Sparkline Grid.Row="2" Height="34" VerticalAlignment="Bottom" Margin="0,16,0,0"
+                                        Values="{Binding ClientsSeries}" Stroke="{DynamicResource SuccessBrush}" />
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="6" Style="{StaticResource Card}" Padding="16,13">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Tr '命中率'}" Style="{StaticResource SectionLabel}" />
+                    <TextBlock Grid.Row="1" Text="{Binding HitRateText}" Style="{StaticResource MetricValue}"
+                               Margin="0,4,0,0" />
+                    <TextBlock Grid.Row="2" Text="{Binding HitDetailText}" Style="{StaticResource TinyText}"
+                               TextTrimming="CharacterEllipsis" Margin="0,4,0,0" />
+                    <Grid Grid.Row="2" VerticalAlignment="Bottom" Margin="0,18,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="{Binding CurrentDbKeysText}" FontSize="{DynamicResource Fs15}" FontWeight="SemiBold" />
+                            <TextBlock Text="{loc:Tr '当前 DB Key'}" Style="{StaticResource TinyText}" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+                            <TextBlock Text="{Binding TotalKeysText}" FontSize="{DynamicResource Fs15}" FontWeight="SemiBold"
+                                       HorizontalAlignment="Right" />
+                            <TextBlock Text="{loc:Tr '全部 DB Key'}" Style="{StaticResource TinyText}" HorizontalAlignment="Right" />
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- 命令统计 + Keyspace -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.35*" MinWidth="340" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" MinWidth="260" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource Card}" Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Margin="16,12,16,6">
+                        <TextBlock Text="{loc:Tr '命令统计 TOP 10'}" Style="{StaticResource CardTitle}" />
+                        <TextBlock Text="{loc:Tr '来自 INFO commandstats'}" HorizontalAlignment="Right" VerticalAlignment="Center"
+                                   Style="{StaticResource TinyText}" />
+                    </Grid>
+                    <DataGrid Grid.Row="1" ItemsSource="{Binding CommandStats}" Margin="6,0,6,6"
+                              Visibility="{Binding HasCommandStats, Converter={StaticResource BoolToVis}}">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="{loc:Tr '命令'}" Width="*">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Command}" FontFamily="{StaticResource MonoFont}"
+                                                   FontSize="{DynamicResource Fs12}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="{loc:Tr '调用次数'}" Binding="{Binding Calls, StringFormat=N0}" Width="100" />
+                            <DataGridTextColumn Header="{loc:Tr '耗时 (µs)'}" Binding="{Binding Usec, StringFormat=N0}" Width="100" />
+                            <DataGridTextColumn Header="{loc:Tr 'µs/次'}" Binding="{Binding UsecPerCall, StringFormat=F2}" Width="80" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBlock Grid.Row="1" Text="{loc:Tr '暂无命令统计数据'}" Style="{StaticResource EmptyHint}"
+                               VerticalAlignment="Center"
+                               Visibility="{Binding HasCommandStats, Converter={StaticResource BoolToVis}, ConverterParameter=invert}" />
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="2" Style="{StaticResource Card}" Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Margin="16,12,16,6">
+                        <TextBlock Text="Keyspace" Style="{StaticResource CardTitle}" />
+                        <TextBlock Text="{loc:Tr '来自 INFO keyspace'}" HorizontalAlignment="Right" VerticalAlignment="Center"
+                                   Style="{StaticResource TinyText}" />
+                    </Grid>
+                    <DataGrid Grid.Row="1" ItemsSource="{Binding Keyspaces}" Margin="6,0,6,6">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="DB" Binding="{Binding Database}" Width="70" />
+                            <DataGridTextColumn Header="Keys" Binding="{Binding Keys, StringFormat=N0}" Width="*" />
+                            <DataGridTextColumn Header="{loc:Tr '带 TTL'}" Binding="{Binding Expires, StringFormat=N0}" Width="*" />
+                            <DataGridTextColumn Header="{loc:Tr '平均 TTL'}" Binding="{Binding AvgTtlText}" Width="110" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- 附加指标条 -->
+        <Border Grid.Row="3" Style="{StaticResource Card}" Padding="16,10" Margin="0,10,0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{loc:Tr '版本'}" Style="{StaticResource TinyText}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding VersionText}" FontSize="{DynamicResource Fs115}" Margin="6,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <TextBlock Text="{loc:Tr '模式'}" Style="{StaticResource TinyText}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding ModeText}" FontSize="{DynamicResource Fs115}" Margin="6,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                    <TextBlock Text="{loc:Tr '角色'}" Style="{StaticResource TinyText}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding RoleText}" FontSize="{DynamicResource Fs115}" Margin="6,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Column="3" Orientation="Horizontal">
+                    <TextBlock Text="{loc:Tr '运行'}" Style="{StaticResource TinyText}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding UptimeText}" FontSize="{DynamicResource Fs115}" Margin="6,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Column="4" Orientation="Horizontal">
+                    <TextBlock Text="{loc:Tr '碎片率'}" Style="{StaticResource TinyText}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding FragmentationText}" FontSize="{DynamicResource Fs115}" Margin="6,0,0,0" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Grid.Column="5" Orientation="Horizontal">
+                    <TextBlock Text="{loc:Tr '网络'}" Style="{StaticResource TinyText}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding NetworkText}" FontSize="{DynamicResource Fs115}" Margin="6,0,0,0" VerticalAlignment="Center"
+                               TextTrimming="CharacterEllipsis" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- SlowLog -->
+        <Border Grid.Row="4" Style="{StaticResource Card}" Padding="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Margin="16,12,16,6">
+                    <TextBlock Text="SlowLog" Style="{StaticResource CardTitle}" />
+                    <TextBlock Text="{Binding SlowLogStatus}" HorizontalAlignment="Right" VerticalAlignment="Center"
+                               Style="{StaticResource TinyText}" />
+                </Grid>
+                <DataGrid Grid.Row="1" ItemsSource="{Binding SlowLog}" Margin="6,0,6,6"
+                          Visibility="{Binding HasSlowLog, Converter={StaticResource BoolToVis}}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60" />
+                        <DataGridTextColumn Header="{loc:Tr '时间'}" Binding="{Binding TimeText}" Width="120" />
+                        <DataGridTextColumn Header="{loc:Tr '耗时'}" Binding="{Binding DurationText}" Width="90" />
+                        <DataGridTemplateColumn Header="{loc:Tr '命令'}" Width="*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding CommandText}" FontFamily="{StaticResource MonoFont}"
+                                               FontSize="{DynamicResource Fs115}" TextTrimming="CharacterEllipsis"
+                                               ToolTip="{Binding CommandText}" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="{loc:Tr '客户端'}" Binding="{Binding ClientText}" Width="150" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Grid.Row="1" VerticalAlignment="Center"
+                            Visibility="{Binding HasSlowLog, Converter={StaticResource BoolToVis}, ConverterParameter=invert}">
+                    <TextBlock Text="{loc:Tr 'SlowLog 为空或尚未读取'}" Style="{StaticResource EmptyHint}" />
+                    <TextBlock Text="{loc:Tr '需要服务端配置 slowlog-log-slower-than；WinRedis 不会修改该配置。'}"
+                               Style="{StaticResource EmptyHint}" FontSize="{DynamicResource Fs105}" Margin="0,4,0,0" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

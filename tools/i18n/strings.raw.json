@@ -1,0 +1,2248 @@
+[
+  {
+    "zh": "确认操作",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConfirmationDialog.xaml:4",
+      "WinRedisClient.App/Dialogs/ConfirmationDialog.xaml:31"
+    ]
+  },
+  {
+    "zh": "请输入 Key 名称以确认：",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConfirmationDialog.xaml:40"
+    ]
+  },
+  {
+    "zh": "此操作不可自动撤销",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConfirmationDialog.xaml:52"
+    ]
+  },
+  {
+    "zh": "取消",
+    "kind": "attr",
+    "count": 8,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConfirmationDialog.xaml:54",
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:365",
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:86"
+    ]
+  },
+  {
+    "zh": "确认",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConfirmationDialog.xaml:56"
+    ]
+  },
+  {
+    "zh": "连接",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:4",
+      "WinRedisClient.App/MainWindow.xaml:339"
+    ]
+  },
+  {
+    "zh": "基本信息",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:40"
+    ]
+  },
+  {
+    "zh": "连接名称",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:50"
+    ]
+  },
+  {
+    "zh": "环境",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:56"
+    ]
+  },
+  {
+    "zh": "环境名称",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:69"
+    ]
+  },
+  {
+    "zh": "分组（可选）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:85"
+    ]
+  },
+  {
+    "zh": "相同分组名的连接会在左侧列表中归为一组；留空显示在“未分组”",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:95"
+    ]
+  },
+  {
+    "zh": "从已有分组或常用分组（生产/预发/测试/开发）中快速选择",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:99"
+    ]
+  },
+  {
+    "zh": "警告色",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:103"
+    ]
+  },
+  {
+    "zh": "在左侧连接卡片上显示颜色标记，仅用于本地提醒",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:108"
+    ]
+  },
+  {
+    "zh": "分组影响左侧列表；警告色只是本地视觉标记，不会修改 Redis",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:120"
+    ]
+  },
+  {
+    "zh": "服务地址与认证",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:129"
+    ]
+  },
+  {
+    "zh": "默认 DB",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:151"
+    ]
+  },
+  {
+    "zh": "用户名（ACL，可选）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:165"
+    ]
+  },
+  {
+    "zh": "密码",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:170"
+    ]
+  },
+  {
+    "zh": "已保存密码，留空表示保持不变",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:174"
+    ]
+  },
+  {
+    "zh": "清除已保存密码",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:177"
+    ]
+  },
+  {
+    "zh": "启用 TLS（SSL）加密连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:184"
+    ]
+  },
+  {
+    "zh": "超时与备注",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:192"
+    ]
+  },
+  {
+    "zh": "超时单位为秒",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:193"
+    ]
+  },
+  {
+    "zh": "连接超时",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:205"
+    ]
+  },
+  {
+    "zh": "命令超时",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:210"
+    ]
+  },
+  {
+    "zh": "备注",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:215"
+    ]
+  },
+  {
+    "zh": "只读连接（禁止任何写操作）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:222"
+    ]
+  },
+  {
+    "zh": "连接后自动批量加载 Key（默认开启）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:224"
+    ]
+  },
+  {
+    "zh": "按 SCAN 分批加载并限制首批数量，避免大 Key 库一次性拉取造成卡顿",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:226"
+    ]
+  },
+  {
+    "zh": "SSH 隧道",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:233"
+    ]
+  },
+  {
+    "zh": "通过跳板机连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:234"
+    ]
+  },
+  {
+    "zh": "SSH 用户名",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:259"
+    ]
+  },
+  {
+    "zh": "SSH 认证方式",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:272"
+    ]
+  },
+  {
+    "zh": "密码：用户名 + 密码登录；私钥文件：从本机选择 OpenSSH/PEM 私钥（不支持 .ppk）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:276"
+    ]
+  },
+  {
+    "zh": "目标地址保持不变：连接会先建立 SSH 隧道，再访问上方 Host:Port",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:278"
+    ]
+  },
+  {
+    "zh": "SSH 密码",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:285"
+    ]
+  },
+  {
+    "zh": "已保存 SSH 密码，留空表示保持不变",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:289"
+    ]
+  },
+  {
+    "zh": "清除已保存 SSH 密码",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:292"
+    ]
+  },
+  {
+    "zh": "SSH 私钥文件",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:299"
+    ]
+  },
+  {
+    "zh": "浏览…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:308"
+    ]
+  },
+  {
+    "zh": "支持 OpenSSH / PEM 私钥（.pem、id_rsa、id_ed25519 等）；不支持 PuTTY .ppk",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:311"
+    ]
+  },
+  {
+    "zh": "私钥口令（可选）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:314"
+    ]
+  },
+  {
+    "zh": "已保存私钥口令，留空表示保持不变",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:318"
+    ]
+  },
+  {
+    "zh": "清除已保存私钥口令",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:321"
+    ]
+  },
+  {
+    "zh": "测试连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:348"
+    ]
+  },
+  {
+    "zh": "密码与私钥口令使用 Windows DPAPI 加密后保存在本机",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:363"
+    ]
+  },
+  {
+    "zh": "保存连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/ConnectionDialog.xaml:367"
+    ]
+  },
+  {
+    "zh": "新建 Key",
+    "kind": "attr",
+    "count": 3,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:4",
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:25",
+      "WinRedisClient.App/Views/BrowserPageView.xaml:155"
+    ]
+  },
+  {
+    "zh": "Key 名称",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:35"
+    ]
+  },
+  {
+    "zh": "类型",
+    "kind": "attr",
+    "count": 3,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:45",
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:38",
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:116"
+    ]
+  },
+  {
+    "zh": "TTL（秒）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:50"
+    ]
+  },
+  {
+    "zh": "0 或留空表示永不过期",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:53"
+    ]
+  },
+  {
+    "zh": "字段",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:59"
+    ]
+  },
+  {
+    "zh": "值",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:64",
+      "WinRedisClient.App/Views/KeyDetailView.xaml:261"
+    ]
+  },
+  {
+    "zh": "若 Key 已存在则覆盖（会先删除原 Key，且不可恢复）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:71"
+    ]
+  },
+  {
+    "zh": "内容不会上传到外部服务",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:84"
+    ]
+  },
+  {
+    "zh": "创建 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/CreateKeyDialog.xaml:88"
+    ]
+  },
+  {
+    "zh": "输入",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TextInputDialog.xaml:4"
+    ]
+  },
+  {
+    "zh": "重命名",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Dialogs/TextInputDialog.xaml:13",
+      "WinRedisClient.App/Views/KeyDetailView.xaml:95"
+    ]
+  },
+  {
+    "zh": "确定",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TextInputDialog.xaml:29"
+    ]
+  },
+  {
+    "zh": "修改 TTL",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:4"
+    ]
+  },
+  {
+    "zh": "修改过期时间",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:13"
+    ]
+  },
+  {
+    "zh": "过期时间",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:23"
+    ]
+  },
+  {
+    "zh": "永不过期",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:26"
+    ]
+  },
+  {
+    "zh": "60 秒",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:27"
+    ]
+  },
+  {
+    "zh": "5 分钟",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:28"
+    ]
+  },
+  {
+    "zh": "1 小时",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:29"
+    ]
+  },
+  {
+    "zh": "1 天",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:30"
+    ]
+  },
+  {
+    "zh": "7 天",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:31"
+    ]
+  },
+  {
+    "zh": "自定义…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:32"
+    ]
+  },
+  {
+    "zh": "自定义秒数",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:37"
+    ]
+  },
+  {
+    "zh": "应用 TTL",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:52"
+    ]
+  },
+  {
+    "zh": "为 Key 设置新的 TTL；选择“永不过期”将移除过期时间。",
+    "kind": "inner",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Dialogs/TtlDialog.xaml:16"
+    ]
+  },
+  {
+    "zh": "全局搜索 (Ctrl+K)",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:58"
+    ]
+  },
+  {
+    "zh": "搜索 Key、命令历史与页面…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:67"
+    ]
+  },
+  {
+    "zh": "最小化",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:79"
+    ]
+  },
+  {
+    "zh": "最大化",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:80"
+    ]
+  },
+  {
+    "zh": "还原",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:84",
+      "WinRedisClient.App/Views/KeyDetailView.xaml:162"
+    ]
+  },
+  {
+    "zh": "关闭",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:88"
+    ]
+  },
+  {
+    "zh": "导航",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:111"
+    ]
+  },
+  {
+    "zh": "连接管理",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:166"
+    ]
+  },
+  {
+    "zh": "新建连接",
+    "kind": "attr",
+    "count": 3,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:169",
+      "WinRedisClient.App/MainWindow.xaml:378",
+      "WinRedisClient.App/MainWindow.xaml:389"
+    ]
+  },
+  {
+    "zh": "搜索连接…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:176"
+    ]
+  },
+  {
+    "zh": "点击折叠/展开分组；拖拽连接到此可移动分组",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:219"
+    ]
+  },
+  {
+    "zh": "拖拽到分组标题可快速移动分组；右键可设置分组",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:261"
+    ]
+  },
+  {
+    "zh": "断开",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:344"
+    ]
+  },
+  {
+    "zh": "复制连接配置（不含密码）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:351"
+    ]
+  },
+  {
+    "zh": "编辑连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:355"
+    ]
+  },
+  {
+    "zh": "删除连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:359"
+    ]
+  },
+  {
+    "zh": "还没有连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:376"
+    ]
+  },
+  {
+    "zh": "添加一个 Redis 连接开始浏览数据",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:377"
+    ]
+  },
+  {
+    "zh": "展开侧栏",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:391"
+    ]
+  },
+  {
+    "zh": "收起侧栏",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:401"
+    ]
+  },
+  {
+    "zh": "生产环境",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:434",
+      "WinRedisClient.App/Views/BrowserPageView.xaml:74"
+    ]
+  },
+  {
+    "zh": "只读模式",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:443"
+    ]
+  },
+  {
+    "zh": "刷新当前页面 (F5)",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:454"
+    ]
+  },
+  {
+    "zh": "数据仅保存在本机，不上传",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:491"
+    ]
+  },
+  {
+    "zh": "没有匹配的结果",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:609"
+    ]
+  },
+  {
+    "zh": "↑↓ 选择",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:616"
+    ]
+  },
+  {
+    "zh": "Enter 执行",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:618"
+    ]
+  },
+  {
+    "zh": "Esc 关闭",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/MainWindow.xaml:620"
+    ]
+  },
+  {
+    "zh": "扫描上限",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:26"
+    ]
+  },
+  {
+    "zh": "最多扫描的 Key 数量（100–500000）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:29"
+    ]
+  },
+  {
+    "zh": "最小体积 (MB)",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:32"
+    ]
+  },
+  {
+    "zh": "按 MEMORY USAGE 过滤，0 表示不过滤",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:35"
+    ]
+  },
+  {
+    "zh": "开始分析",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:42"
+    ]
+  },
+  {
+    "zh": "导出 CSV",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:59"
+    ]
+  },
+  {
+    "zh": "大 Key 候选",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:80"
+    ]
+  },
+  {
+    "zh": "已达扫描上限",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:84"
+    ]
+  },
+  {
+    "zh": "内存占用",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:127"
+    ]
+  },
+  {
+    "zh": "元素数量",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:128"
+    ]
+  },
+  {
+    "zh": "打开",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:132",
+      "WinRedisClient.App/Views/HistoryPageView.xaml:75"
+    ]
+  },
+  {
+    "zh": "通过 SCAN 增量扫描当前 DB，并按 MEMORY USAGE 与元素数量识别大 Key。不会使用 KEYS *，不会修改数据。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:146"
+    ]
+  },
+  {
+    "zh": "Key 预览",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:167"
+    ]
+  },
+  {
+    "zh": "在数据浏览中打开",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:169"
+    ]
+  },
+  {
+    "zh": "正在读取预览…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BigKeyPageView.xaml:196"
+    ]
+  },
+  {
+    "zh": "复制连接地址",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:42",
+      "WinRedisClient.App/Views/BrowserPageView.xaml:42"
+    ]
+  },
+  {
+    "zh": "切换当前数据库；展开时读取各 DB 的 Key 数量",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:53"
+    ]
+  },
+  {
+    "zh": "数据库",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:54"
+    ]
+  },
+  {
+    "zh": "只读",
+    "kind": "attr",
+    "count": 3,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:83",
+      "WinRedisClient.App/Views/CliPageView.xaml:42",
+      "WinRedisClient.App/Views/KeyDetailView.xaml:54"
+    ]
+  },
+  {
+    "zh": "延迟",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:105"
+    ]
+  },
+  {
+    "zh": "刷新 Key 列表 (F5)",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:113"
+    ]
+  },
+  {
+    "zh": "刷新 Key 列表",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:113"
+    ]
+  },
+  {
+    "zh": "搜索 Key…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:144"
+    ]
+  },
+  {
+    "zh": "清空搜索",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:152"
+    ]
+  },
+  {
+    "zh": "重新扫描 (F5)",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:157"
+    ]
+  },
+  {
+    "zh": "模糊匹配：仅过滤已加载的 Key；全匹配：按名称精确查询；数据库模糊：用 SCAN 扫描全库（会先弹出性能确认）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:163"
+    ]
+  },
+  {
+    "zh": "按 Key 类型筛选",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:166"
+    ]
+  },
+  {
+    "zh": "按过期状态筛选",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:169"
+    ]
+  },
+  {
+    "zh": "目录",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:170"
+    ]
+  },
+  {
+    "zh": "按分隔符聚合为虚拟目录（不会修改 Redis）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:171"
+    ]
+  },
+  {
+    "zh": "复制 Key 名称",
+    "kind": "attr",
+    "count": 4,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:185",
+      "WinRedisClient.App/Views/BrowserPageView.xaml:239",
+      "WinRedisClient.App/Views/KeyDetailView.xaml:42"
+    ]
+  },
+  {
+    "zh": "重命名…",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:188",
+      "WinRedisClient.App/Views/BrowserPageView.xaml:243"
+    ]
+  },
+  {
+    "zh": "设置 TTL…",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:191",
+      "WinRedisClient.App/Views/BrowserPageView.xaml:247"
+    ]
+  },
+  {
+    "zh": "删除 Key",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:195",
+      "WinRedisClient.App/Views/BrowserPageView.xaml:252"
+    ]
+  },
+  {
+    "zh": "没有可显示的 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:288"
+    ]
+  },
+  {
+    "zh": "连接 Redis 后使用 SCAN 浏览；搜索会自动防抖并过滤结果。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:289"
+    ]
+  },
+  {
+    "zh": "加载下一批",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:311"
+    ]
+  },
+  {
+    "zh": "按 SCAN 游标继续加载一批（约 500 个 Key）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/BrowserPageView.xaml:314"
+    ]
+  },
+  {
+    "zh": "复制全部输出",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:45"
+    ]
+  },
+  {
+    "zh": "清空输出",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:48"
+    ]
+  },
+  {
+    "zh": "输入 Redis 命令，Enter 执行…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:127"
+    ]
+  },
+  {
+    "zh": "执行",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:131"
+    ]
+  },
+  {
+    "zh": "只读连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:137"
+    ]
+  },
+  {
+    "zh": "命令历史",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:172",
+      "WinRedisClient.App/Views/HistoryPageView.xaml:98"
+    ]
+  },
+  {
+    "zh": "清空",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:173"
+    ]
+  },
+  {
+    "zh": "放入输入框",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:193"
+    ]
+  },
+  {
+    "zh": "暂无命令历史",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:200",
+      "WinRedisClient.App/Views/HistoryPageView.xaml:148"
+    ]
+  },
+  {
+    "zh": "双击历史命令可填入输入框；认证类命令不会记录。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/CliPageView.xaml:205"
+    ]
+  },
+  {
+    "zh": "左侧",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:26"
+    ]
+  },
+  {
+    "zh": "只读会话",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:29",
+      "WinRedisClient.App/Views/DiffPageView.xaml:66"
+    ]
+  },
+  {
+    "zh": "要比较的 Key 名称",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:50",
+      "WinRedisClient.App/Views/DiffPageView.xaml:87"
+    ]
+  },
+  {
+    "zh": "交换左右",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:56"
+    ]
+  },
+  {
+    "zh": "右侧",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:63"
+    ]
+  },
+  {
+    "zh": "开始比较",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:100"
+    ]
+  },
+  {
+    "zh": "清除结果",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:102"
+    ]
+  },
+  {
+    "zh": "复制结果",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:112"
+    ]
+  },
+  {
+    "zh": "导出 TXT",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:114"
+    ]
+  },
+  {
+    "zh": "左侧 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:137"
+    ]
+  },
+  {
+    "zh": "右侧 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:147"
+    ]
+  },
+  {
+    "zh": "类型不同",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:171"
+    ]
+  },
+  {
+    "zh": "内容已截断",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:175"
+    ]
+  },
+  {
+    "zh": "尚未比较",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:206"
+    ]
+  },
+  {
+    "zh": "选择左右连接与 Key 后点击“开始比较”。两个会话均以只读方式建立，不会修改任何数据。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/DiffPageView.xaml:207"
+    ]
+  },
+  {
+    "zh": "刷新",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:34",
+      "WinRedisClient.App/Views/MonitorPageView.xaml:49"
+    ]
+  },
+  {
+    "zh": "最近访问",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:41"
+    ]
+  },
+  {
+    "zh": "最近访问的 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:49"
+    ]
+  },
+  {
+    "zh": "清空最近访问",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:50"
+    ]
+  },
+  {
+    "zh": "从最近访问中移除",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:80"
+    ]
+  },
+  {
+    "zh": "暂无最近访问",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:90"
+    ]
+  },
+  {
+    "zh": "在数据浏览中打开的 Key 会记录在本机；可在设置中关闭记录。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:91"
+    ]
+  },
+  {
+    "zh": "本机命令历史",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:106"
+    ]
+  },
+  {
+    "zh": "清空命令历史",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:107"
+    ]
+  },
+  {
+    "zh": "填入终端",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:129"
+    ]
+  },
+  {
+    "zh": "复制",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:133"
+    ]
+  },
+  {
+    "zh": "删除这条历史",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:138"
+    ]
+  },
+  {
+    "zh": "在命令终端执行的非敏感命令会记录在本机；认证类命令永不记录。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/HistoryPageView.xaml:149"
+    ]
+  },
+  {
+    "zh": "重新读取该 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:45"
+    ]
+  },
+  {
+    "zh": "重新读取 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:46"
+    ]
+  },
+  {
+    "zh": "大小",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:77"
+    ]
+  },
+  {
+    "zh": "数量",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:83"
+    ]
+  },
+  {
+    "zh": "编码",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:89"
+    ]
+  },
+  {
+    "zh": "重命名当前 Key（目标存在时不会覆盖）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:97"
+    ]
+  },
+  {
+    "zh": "设置或清除当前 Key 的过期时间",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:100"
+    ]
+  },
+  {
+    "zh": "删除",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:101"
+    ]
+  },
+  {
+    "zh": "删除当前 Key（需要确认）",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:104"
+    ]
+  },
+  {
+    "zh": "选择一个 Key 查看详情",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:116"
+    ]
+  },
+  {
+    "zh": "支持 String / Hash / List / Set / ZSet / Stream。字符串可编辑保存（保留原 TTL），集合支持分页浏览与元素级写入。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:118"
+    ]
+  },
+  {
+    "zh": "正在读取 Key 内容…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:124"
+    ]
+  },
+  {
+    "zh": "未保存",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:146"
+    ]
+  },
+  {
+    "zh": "二进制预览",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:151"
+    ]
+  },
+  {
+    "zh": "自动换行",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:155"
+    ]
+  },
+  {
+    "zh": "默认自动换行；关闭后可用横向滚动条查看超长单行",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:158"
+    ]
+  },
+  {
+    "zh": "格式化 JSON",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:159"
+    ]
+  },
+  {
+    "zh": "保存",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:164"
+    ]
+  },
+  {
+    "zh": "写回 Redis 并保留原 TTL (Ctrl+S)",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:166"
+    ]
+  },
+  {
+    "zh": "当前连接处于只读模式，编辑器不可写入。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:173"
+    ]
+  },
+  {
+    "zh": "二进制内容以十六进制预览，不能在编辑器中修改。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:178"
+    ]
+  },
+  {
+    "zh": "内容超过 256 KB，已截断为只读预览；保存已禁用，避免覆盖未读取部分。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:183"
+    ]
+  },
+  {
+    "zh": "· 消息内容不可编辑",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:237"
+    ]
+  },
+  {
+    "zh": "字段 / 索引",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:259"
+    ]
+  },
+  {
+    "zh": "操作",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:266"
+    ]
+  },
+  {
+    "zh": "编辑元素",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:296"
+    ]
+  },
+  {
+    "zh": "删除元素",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:301"
+    ]
+  },
+  {
+    "zh": "集合为空",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:314"
+    ]
+  },
+  {
+    "zh": "点击右上角按钮写入第一个元素",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:315"
+    ]
+  },
+  {
+    "zh": "正在加载元素…",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:320"
+    ]
+  },
+  {
+    "zh": "保存元素",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:364"
+    ]
+  },
+  {
+    "zh": "加载更多",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/KeyDetailView.xaml:378"
+    ]
+  },
+  {
+    "zh": "采样间隔",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:42",
+      "WinRedisClient.App/Views/SettingsPageView.xaml:262"
+    ]
+  },
+  {
+    "zh": "读取 SlowLog",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:50"
+    ]
+  },
+  {
+    "zh": "内存使用",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:74"
+    ]
+  },
+  {
+    "zh": "每秒操作",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:92"
+    ]
+  },
+  {
+    "zh": "客户端连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:112"
+    ]
+  },
+  {
+    "zh": "命中率",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:129"
+    ]
+  },
+  {
+    "zh": "当前 DB Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:141"
+    ]
+  },
+  {
+    "zh": "全部 DB Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:146"
+    ]
+  },
+  {
+    "zh": "命令统计 TOP 10",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:168"
+    ]
+  },
+  {
+    "zh": "来自 INFO commandstats",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:169"
+    ]
+  },
+  {
+    "zh": "命令",
+    "kind": "attr",
+    "count": 2,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:175",
+      "WinRedisClient.App/Views/MonitorPageView.xaml:274"
+    ]
+  },
+  {
+    "zh": "调用次数",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:183"
+    ]
+  },
+  {
+    "zh": "耗时 (µs)",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:184"
+    ]
+  },
+  {
+    "zh": "µs/次",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:185"
+    ]
+  },
+  {
+    "zh": "暂无命令统计数据",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:188"
+    ]
+  },
+  {
+    "zh": "来自 INFO keyspace",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:202"
+    ]
+  },
+  {
+    "zh": "带 TTL",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:209"
+    ]
+  },
+  {
+    "zh": "平均 TTL",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:210"
+    ]
+  },
+  {
+    "zh": "版本",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:229"
+    ]
+  },
+  {
+    "zh": "模式",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:233"
+    ]
+  },
+  {
+    "zh": "角色",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:237"
+    ]
+  },
+  {
+    "zh": "运行",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:241"
+    ]
+  },
+  {
+    "zh": "碎片率",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:245"
+    ]
+  },
+  {
+    "zh": "网络",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:249"
+    ]
+  },
+  {
+    "zh": "时间",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:272"
+    ]
+  },
+  {
+    "zh": "耗时",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:273"
+    ]
+  },
+  {
+    "zh": "客户端",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:283"
+    ]
+  },
+  {
+    "zh": "SlowLog 为空或尚未读取",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:288"
+    ]
+  },
+  {
+    "zh": "需要服务端配置 slowlog-log-slower-than；WinRedis 不会修改该配置。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/MonitorPageView.xaml:289"
+    ]
+  },
+  {
+    "zh": "外观",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:25"
+    ]
+  },
+  {
+    "zh": "主题配色",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:26"
+    ]
+  },
+  {
+    "zh": "低饱和度配色，选择后立即应用并保存",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:27"
+    ]
+  },
+  {
+    "zh": "界面字体大小",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:138"
+    ]
+  },
+  {
+    "zh": "小 / 标准 / 大，选择后立即应用到全部界面并保存",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:139"
+    ]
+  },
+  {
+    "zh": "目录视图",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:152"
+    ]
+  },
+  {
+    "zh": "按分隔符把 Key 聚合为客户端虚拟目录",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:153"
+    ]
+  },
+  {
+    "zh": "Key 分隔符",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:165"
+    ]
+  },
+  {
+    "zh": "用于目录视图拆分，例如 : 或 /",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:166"
+    ]
+  },
+  {
+    "zh": "显示 Key 体积",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:178"
+    ]
+  },
+  {
+    "zh": "使用 MEMORY USAGE 采样，大量 Key 时略增加扫描耗时",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:179"
+    ]
+  },
+  {
+    "zh": "浏览与连接",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:191"
+    ]
+  },
+  {
+    "zh": "默认数据库",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:198"
+    ]
+  },
+  {
+    "zh": "新建连接时默认选中的 DB",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:199"
+    ]
+  },
+  {
+    "zh": "安全",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:212"
+    ]
+  },
+  {
+    "zh": "生产环境写操作二次确认",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:219"
+    ]
+  },
+  {
+    "zh": "删除、批量、FLUSH 等高危命令始终需要确认，此选项额外覆盖生产环境的所有写操作。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:220"
+    ]
+  },
+  {
+    "zh": "本地优先的现代化 Redis 桌面客户端",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:243"
+    ]
+  },
+  {
+    "zh": "实例监控",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:255"
+    ]
+  },
+  {
+    "zh": "1–60 秒；仅页面可见时采样",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:263"
+    ]
+  },
+  {
+    "zh": "自动刷新",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:275"
+    ]
+  },
+  {
+    "zh": "打开监控页时自动开始采样",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:276"
+    ]
+  },
+  {
+    "zh": "历史与隐私",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:288"
+    ]
+  },
+  {
+    "zh": "记录最近访问 Key",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:295"
+    ]
+  },
+  {
+    "zh": "仅保存在本机，可随时关闭与清空",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:296"
+    ]
+  },
+  {
+    "zh": "记录命令历史",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:308"
+    ]
+  },
+  {
+    "zh": "认证类命令永不记录；可在最近与历史页清空",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:309"
+    ]
+  },
+  {
+    "zh": "命令历史上限",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:321"
+    ]
+  },
+  {
+    "zh": "20–2000 条",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:322"
+    ]
+  },
+  {
+    "zh": "清空全部本地历史",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:327"
+    ]
+  },
+  {
+    "zh": "本地数据",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:335"
+    ]
+  },
+  {
+    "zh": "连接配置（密码经 DPAPI 加密）、设置与历史均保存在该目录，不会上传到任何外部服务。",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:338"
+    ]
+  },
+  {
+    "zh": "打开数据目录",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:347"
+    ]
+  },
+  {
+    "zh": "导出连接配置",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:349"
+    ]
+  },
+  {
+    "zh": "导出 JSON 配置，默认不包含密码与 SSH 凭据",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:350"
+    ]
+  },
+  {
+    "zh": "恢复默认",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:377"
+    ]
+  },
+  {
+    "zh": "保存设置",
+    "kind": "attr",
+    "count": 1,
+    "files": [
+      "WinRedisClient.App/Views/SettingsPageView.xaml:379"
+    ]
+  }
+]

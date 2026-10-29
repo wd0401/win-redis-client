@@ -1,0 +1,241 @@
+<UserControl x:Class="WinRedisClient.App.Views.BigKeyPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:WinRedisClient.App.Localization"
+             xmlns:vm="clr-namespace:WinRedisClient.Presentation.ViewModels;assembly=WinRedisClient.Presentation"
+             Background="Transparent">
+    <Grid Margin="16,14,16,14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- 扫描参数 -->
+        <Border Grid.Row="0" Style="{StaticResource Card}" Padding="16,12" Margin="0,0,0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="{loc:Tr '扫描上限'}" Style="{StaticResource SectionLabel}" />
+                    <TextBox Style="{StaticResource InputMono}" Width="96" Height="32" MinHeight="32" Margin="0,5,0,0"
+                             Text="{Binding ScanLimitText, UpdateSourceTrigger=PropertyChanged}"
+                             ToolTip="{loc:Tr '最多扫描的 Key 数量（100–500000）'}" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="12,0,0,0">
+                    <TextBlock Text="{loc:Tr '最小体积 (MB)'}" Style="{StaticResource SectionLabel}" />
+                    <TextBox Style="{StaticResource InputMono}" Width="96" Height="32" MinHeight="32" Margin="0,5,0,0"
+                             Text="{Binding MinSizeMbText, UpdateSourceTrigger=PropertyChanged}"
+                             ToolTip="{loc:Tr '按 MEMORY USAGE 过滤，0 表示不过滤'}" />
+                </StackPanel>
+                <StackPanel Grid.Column="2" Margin="12,0,0,0">
+                    <TextBlock Text="{loc:Tr '类型'}" Style="{StaticResource SectionLabel}" />
+                    <ComboBox Style="{StaticResource ComboModern}" Width="104" Height="32" MinHeight="32" Margin="0,5,0,0"
+                              ItemsSource="{Binding TypeFilters}" SelectedItem="{Binding TypeFilter}" />
+                </StackPanel>
+                <Button Grid.Column="3" Style="{StaticResource BtnPrimary}" Content="{loc:Tr '开始分析'}" Margin="16,18,0,0"
+                        VerticalAlignment="Top" Command="{Binding AnalyzeCommand}" IsEnabled="{Binding CanAnalyze}" />
+                <Button Grid.Column="4" Style="{StaticResource BtnSecondary}" Content="{loc:Tr '取消'}" Margin="8,18,0,0"
+                        VerticalAlignment="Top" Command="{Binding CancelCommand}"
+                        Visibility="{Binding IsAnalyzing, Converter={StaticResource BoolToVis}}" />
+
+                <StackPanel Grid.Column="5" Margin="20,0,10,0" VerticalAlignment="Center">
+                    <TextBlock Text="{Binding StatusText}" FontSize="{DynamicResource Fs12}" Foreground="{DynamicResource TextSecondaryBrush}"
+                               TextTrimming="CharacterEllipsis" />
+                    <TextBlock Text="{Binding ProgressText}" Style="{StaticResource TinyText}" Margin="0,3,0,0"
+                               TextTrimming="CharacterEllipsis" />
+                    <TextBlock Text="{Binding ErrorText}" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource DangerBrush}"
+                               Margin="0,2,0,0" TextTrimming="CharacterEllipsis"
+                               Visibility="{Binding ErrorText, Converter={StaticResource EmptyStringToVis}, ConverterParameter=invert}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="6" Orientation="Horizontal" VerticalAlignment="Bottom">
+                    <Button Style="{StaticResource BtnSmallGhost}" Content="{loc:Tr '导出 CSV'}" Command="{Binding ExportCommand}"
+                            IsEnabled="{Binding HasResults}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- 结果 -->
+        <Border Grid.Row="1" Style="{StaticResource Card}" Padding="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Margin="16,12,16,6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{loc:Tr '大 Key 候选'}" Style="{StaticResource CardTitle}" />
+                        <Border Style="{StaticResource TagBadge}" Background="{DynamicResource WarningLightBrush}"
+                                Margin="10,0,0,0" VerticalAlignment="Center"
+                                Visibility="{Binding HitScanLimit, Converter={StaticResource BoolToVis}}">
+                            <TextBlock Text="{loc:Tr '已达扫描上限'}" FontSize="{DynamicResource Fs10}" Foreground="{DynamicResource WarningBrush}" />
+                        </Border>
+                    </StackPanel>
+                    <TextBlock Grid.Column="1" Style="{StaticResource TinyText}" VerticalAlignment="Center"
+                               Text="{Binding LastRunText, StringFormat={loc:Tr '最近分析 {0}'}}" />
+                </Grid>
+
+                <Grid Grid.Row="1" Margin="6,0,6,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid Grid.Column="0" ItemsSource="{Binding Rows}" SelectedItem="{Binding SelectedRow}"
+                              MouseDoubleClick="OnRowDoubleClick">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="Key" Width="*">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate DataType="{x:Type vm:BigKeyRowViewModel}">
+                                        <StackPanel Orientation="Horizontal" ToolTip="{Binding Key}">
+                                            <TextBlock Text="{Binding Key}" FontFamily="{StaticResource MonoFont}" FontSize="{DynamicResource Fs12}"
+                                                       TextTrimming="CharacterEllipsis" MaxWidth="420" />
+                                            <Border Style="{StaticResource TagBadge}" Background="{DynamicResource DangerLightBrush}"
+                                                    Margin="8,0,0,0" VerticalAlignment="Center"
+                                                    Visibility="{Binding IsLarge, Converter={StaticResource BoolToVis}}">
+                                                <TextBlock Text="{Binding BadgeText}" FontSize="{DynamicResource Fs95}"
+                                                           Foreground="{DynamicResource DangerBrush}" />
+                                            </Border>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="{loc:Tr '类型'}" Width="90">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate DataType="{x:Type vm:BigKeyRowViewModel}">
+                                        <Border Style="{StaticResource TypeChip}" HorizontalAlignment="Left"
+                                                Background="{Binding Type, Converter={StaticResource KeyTypeToBrush}}">
+                                            <TextBlock Text="{Binding TypeDisplay}" FontSize="{DynamicResource Fs95}"
+                                                       Foreground="{Binding Type, Converter={StaticResource KeyTypeToBrush}, ConverterParameter=fg}" />
+                                        </Border>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="{loc:Tr '内存占用'}" Binding="{Binding SizeText}" Width="110" />
+                            <DataGridTextColumn Header="{loc:Tr '元素数量'}" Binding="{Binding CountText}" Width="110" />
+                            <DataGridTemplateColumn Header="" Width="76">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate DataType="{x:Type vm:BigKeyRowViewModel}">
+                                        <Button Style="{StaticResource BtnSmallGhost}" Content="{loc:Tr '打开'}"
+                                                FontSize="{DynamicResource Fs105}" Padding="8,3"
+                                                Command="{Binding DataContext.OpenKeyCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                                CommandParameter="{Binding}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <StackPanel Grid.Column="0" VerticalAlignment="Center"
+                                Visibility="{Binding HasResults, Converter={StaticResource BoolToVis}, ConverterParameter=invert}">
+                        <TextBlock Text="&#xE9D2;" Style="{StaticResource EmptyIcon}" />
+                        <TextBlock Text="{Binding StatusText}" Style="{StaticResource EmptyTitle}" />
+                        <TextBlock Text="{loc:Tr '通过 SCAN 增量扫描当前 DB，并按 MEMORY USAGE 与元素数量识别大 Key。不会使用 KEYS *，不会修改数据。'}"
+                                   Style="{StaticResource EmptyHint}" />
+                    </StackPanel>
+
+                    <!-- 选中行后的右侧只读预览 -->
+                    <Border Grid.Column="1" Width="404" Margin="10,4,0,4" CornerRadius="10"
+                            Background="{DynamicResource BgInputBrush}" Padding="14,12"
+                            Visibility="{Binding HasPreview, Converter={StaticResource BoolToVis}}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{loc:Tr 'Key 预览'}" Style="{StaticResource CardTitle}" FontSize="{DynamicResource Fs125}"
+                                           VerticalAlignment="Center" />
+                                <Button Grid.Column="1" Style="{StaticResource BtnSmallGhost}" Content="{loc:Tr '在数据浏览中打开'}"
+                                        FontSize="{DynamicResource Fs105}" Command="{Binding OpenKeyCommand}" CommandParameter="{Binding SelectedRow}" />
+                            </Grid>
+
+                            <StackPanel Grid.Row="1" Margin="0,8,0,0">
+                                <TextBlock Text="{Binding PreviewKey}" FontFamily="{StaticResource MonoFont}" FontSize="{DynamicResource Fs12}"
+                                           FontWeight="SemiBold" TextTrimming="CharacterEllipsis" ToolTip="{Binding PreviewKey}" />
+                                <WrapPanel Margin="0,7,0,0">
+                                    <Border Style="{StaticResource TypeChip}" Margin="0,0,6,0">
+                                        <TextBlock Text="{Binding PreviewType}" FontSize="{DynamicResource Fs95}" />
+                                    </Border>
+                                    <Border Style="{StaticResource TagBadge}" Margin="0,0,6,0">
+                                        <TextBlock Text="{Binding PreviewTtl, StringFormat=TTL {0}}" FontSize="{DynamicResource Fs95}" />
+                                    </Border>
+                                    <Border Style="{StaticResource TagBadge}" Margin="0,0,6,0">
+                                        <TextBlock Text="{Binding PreviewSize, StringFormat={loc:Tr '大小 {0}'}}" FontSize="{DynamicResource Fs95}" />
+                                    </Border>
+                                    <Border Style="{StaticResource TagBadge}">
+                                        <TextBlock Text="{Binding PreviewCount, StringFormat={loc:Tr '数量 {0}'}}" FontSize="{DynamicResource Fs95}" />
+                                    </Border>
+                                </WrapPanel>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2" Margin="0,8,0,0">
+                                <TextBlock Text="{Binding PreviewError}" FontSize="{DynamicResource Fs105}" TextWrapping="Wrap"
+                                           Foreground="{DynamicResource DangerBrush}"
+                                           Visibility="{Binding PreviewError, Converter={StaticResource EmptyStringToVis}, ConverterParameter=invert}" />
+                                <TextBlock Text="{loc:Tr '正在读取预览…'}" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource TextTertiaryBrush}"
+                                           Visibility="{Binding IsPreviewLoading, Converter={StaticResource BoolToVis}}" />
+                                <TextBlock Text="{Binding PreviewNote}" FontSize="{DynamicResource Fs105}" Foreground="{DynamicResource TextTertiaryBrush}"
+                                           Visibility="{Binding PreviewNote, Converter={StaticResource EmptyStringToVis}, ConverterParameter=invert}" />
+                            </StackPanel>
+
+                            <ScrollViewer Grid.Row="3" Margin="0,8,0,0" VerticalScrollBarVisibility="Auto"
+                                          Visibility="{Binding HasPreview, Converter={StaticResource BoolToVis}}">
+                                <StackPanel>
+                                    <TextBox Style="{StaticResource InputMultiline}" Height="260" IsReadOnly="True"
+                                             FontSize="{DynamicResource Fs115}" Text="{Binding PreviewContent, Mode=OneWay}"
+                                             Visibility="{Binding IsPreviewString, Converter={StaticResource BoolToVis}}" />
+
+                                    <ItemsControl ItemsSource="{Binding PreviewItems}"
+                                                  Visibility="{Binding ShowPreviewItems, Converter={StaticResource BoolToVis}}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate DataType="{x:Type vm:BigKeyPreviewRow}">
+                                                <Border BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,0,0,1"
+                                                        Padding="2,5">
+                                                    <TextBlock Text="{Binding Text}" FontFamily="{StaticResource MonoFont}"
+                                                               FontSize="{DynamicResource Fs11}" TextWrapping="Wrap" />
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </ScrollViewer>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Border Grid.Row="2" BorderBrush="{DynamicResource BorderLightBrush}" BorderThickness="0,1,0,0"
+                        Padding="16,7">
+                    <Grid>
+                        <TextBlock Text="{Binding ProgressText}" FontSize="{DynamicResource Fs105}"
+                                   Foreground="{DynamicResource TextTertiaryBrush}" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Right" FontSize="{DynamicResource Fs105}"
+                                   Foreground="{DynamicResource TextTertiaryBrush}" VerticalAlignment="Center"
+                                   Text="{Binding ScannedCount, StringFormat={loc:Tr '已扫描 {0:N0}'}}" />
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

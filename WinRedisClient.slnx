@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/WinRedisClient.App/WinRedisClient.App.csproj" />
+    <Project Path="src/WinRedisClient.Core/WinRedisClient.Core.csproj" />
+    <Project Path="src/WinRedisClient.Infrastructure/WinRedisClient.Infrastructure.csproj" />
+    <Project Path="src/WinRedisClient.Presentation/WinRedisClient.Presentation.csproj" />
+    <Project Path="src/WinRedisClient.Redis/WinRedisClient.Redis.csproj" />
+    <Project Path="src/WinRedisClient.Transport/WinRedisClient.Transport.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WinRedisClient.Core.Tests/WinRedisClient.Core.Tests.csproj" />
+    <Project Path="tests/WinRedisClient.IntegrationTests/WinRedisClient.IntegrationTests.csproj" />
+    <Project Path="tests/WinRedisClient.PerformanceTests/WinRedisClient.PerformanceTests.csproj" />
+    <Project Path="tests/WinRedisClient.Redis.Tests/WinRedisClient.Redis.Tests.csproj" />
+  </Folder>
+</Solution>
